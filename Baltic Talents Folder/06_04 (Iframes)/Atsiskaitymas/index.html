@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Video ir paveiksliuku ikelimo uzduotis.">
+        <meta name="author" content="Paulius Kazokas">
+        <title>Week2.Exsercise 1.</title>
+        <style>
+            iframe.fxSize{
+                width: 560px;
+                height: 315px;
+            }
+            video{
+                width: 560px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Delfi.lt</h1>
+                <div>
+                    <iframe class="fxSize" src="https://www.delfi.lt/"></iframe>
+                </div>
+                <h1>Google maps</h1>
+                <div>
+                    <iframe class="fxSize" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.219602278379!2d25.335696616246317!3d54.72335198029064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96e7d814e149%3A0x86772a85fe5a2719!2sBaltic+Talents+Vilnius!5e0!3m2!1slt!2slt!4v1528104272458" style="border:0" allowfullscreen></iframe>
+                </div>
+                <h1>Youtube</h1>
+                <div>
+                    <iframe class="fxSize" src="https://www.youtube.com/embed/mEzDRKVL3Os" allowfullscreen></iframe>
+                </div>
+                <h1>Local video</h1>
+                <div>
+                    <video controls> <!-- poster="pvz.jpg"  tai yra video apibudinantis paveiksliukas -->
+                        <source src="people.mp4" type="video/mp4">
+                        <source src="people.webm" type="video/webm">
+                            <p>Your browser doesn't support video</p>
+                    </video>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

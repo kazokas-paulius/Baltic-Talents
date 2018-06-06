@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Uzduotis 2</title>
+    <style>
+      table.border, th, tr, td{
+        border: 1px solid black;
+      }
+      label.inp{
+        padding-left: 26px;
+      }
+      input.inp{
+        margin-left: 26px;
+      }
+      button.inp{
+        margin-left: 26px;
+      }
+      button.last{
+        margin-top: 5px;
+      }
+      textarea{
+        vertical-align: top;
+        margin-left: 10px;
+      }
+      div.spacing{
+          margin-bottom: 10px;
+      }
+      img.fixedsize{
+          width: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <hr>
+    <p>Simple table</p>
+    <table class="border">
+        <tr>
+          <th>#</th>
+          <th>Amount</th>
+          <th>Client</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>250$</td>
+          <td>John</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1,300$</td>
+          <td>John</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>4,300$</td>
+          <td>Dennis</td>
+        </tr>
+      </table>
+    <hr>
+    <p>Table with colspan attributes</p>
+    <table class="border">
+      <thead>
+        <tr>
+          <th colspan="2"><strong>The table header</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The table body</td>
+          <td>with two columns</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">The table footer</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr>
+    <p>Table with thead, tbody and tfoot</p>
+    <table class="border">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Countries</th>
+          <th>Capitals</th>
+          <th>Population</th>
+          <th>Language</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Lithuania</td>
+          <td>Vilnius</td>
+          <td>2.5 million</td>
+          <td>Lithuanian</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>USA</td>
+          <td>Washington, D.C.</td>
+          <td>309 million</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Sweden</td>
+          <td>Stockholm</td>
+          <td>9 million</td>
+          <td>Swedish</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Footer</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr>
+    <p>Simple POST form</p>
+    <form action="index.html" method="post">
+        <div class="spacing">
+            <label class="inp">Name:<input class="inp" type="text" placeholder="name_here"></label>
+        </div>
+        <div class="spacing">
+            <label class="inp">Email:<input class="inp" type="text" placeholder="email_here"></label>
+        </div>
+        <div class="spacing">
+            <label class="inp">Message:<textarea class="inp" rows="4" cols="50" placeholder="message_here"></textarea></label>
+        </div>
+      <button class="inp" type="button" name="button">Send your message</button>
+    </form>
+    <hr>
+    <p>POST form with select box, checkboxes and radio buttons</p>
+    <p>Car name:
+      <select name="masinos">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+      <select name="masinos_multiple" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+    </p>
+
+    <!-- fieldsetas. Fieldu grupe su savotisku stiliumi -->
+    <form class="" action="index.html" method="post">
+        <fieldset>
+            <legend>fieldsetas</legend>
+            Name: <input type="text" name="" value="">
+            <input type="submit" name="issiusti" value="Send">
+            <button type="submit">
+                <img class="fixedsize" src="test.ico" alt="test_ico">
+                Siusti
+            </button>
+        </fieldset>
+    </form>
+
+    <form action="index.html" method="post">
+      Gender: <input type="radio" name="gender" value="male">Male
+      <input type="radio" name="gender" value="female">Female
+      <input type="radio" name="gender" value="other">Other
+    </form>
+    <form action="index.html" method="post">
+      Comfort: <input type="checkbox" name="comfort" value="heating">Heating
+      <input type="checkbox" name="comfort" value="cooling">Cooling
+      <input type="checkbox" name="comfort" value="cruise">Cruise
+    </form>
+    <button class="last" type="button" name="button">Send your message</button>
+    <!-- for - tik ant label elemento naudojamas, su juo susiejame inputus, selectus, textarea
+    i foro vidu reikia irasyti elemento id varda. Paspaudus ant to lapelio kur yra foras
+    pasizymi laukelis, kur yra priskirtas foro pavadinimas kaip id (unikalus elemento vardas)-->
+
+    <!-- labelius naudoti tik formose -->
+    <!-- <label for="slaptazodis">Slaptazodis</label>
+    <input id="slaptazodis" type="password" name="button"></input>
+    <input type="number" name="button" step="2"></input>
+    <input type="date" name="button"></input>
+    <input type="time" name="button"></input>
+    <input type="email" name="button"></input> -->
+
+    <hr>
+  </body>
+</html>

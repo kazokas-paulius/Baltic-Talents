@@ -1,0 +1,38 @@
+main.full{
+    width: 100%;
+}
+div.chess_table{
+    display: flex;
+    position: relative;
+}
+table{
+    width: 100%;
+    position: absolute;
+    margin-top: 0;
+}
+table, thead, th, tr, td{
+    border: 1px solid rgb(255, 255, 255);
+}
+p{
+    text-align: center;
+    position: relative;
+    font-size: 84px;
+    margin: 0 0 0 0;
+}
+th{
+    text-align: center;
+    width: 100px;
+    height: 2%;
+}
+td.letters{
+    text-align: center;
+    font-weight: bold;
+    width: 2%;
+    height: 112px;
+}
+td.white{
+    background-color: rgb(247, 247, 247);
+}
+td.black{
+    background-color: rgb(36, 41, 46);
+}

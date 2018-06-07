@@ -1,14 +1,15 @@
 main.full{
-    width: 100%;
+    width: 95%;
 }
 div.chess_table{
     display: flex;
     position: relative;
 }
 table{
-    width: 100%;
+    width: 60%;
     position: absolute;
     margin-top: 0;
+    border-collapse: collapse;
 }
 table, thead, th, tr, td{
     border: 1px solid rgba(255, 255, 255, 0);

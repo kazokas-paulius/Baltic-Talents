@@ -1,0 +1,54 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+}
+main{
+    height:100%;
+}
+div.top{
+    display: flex;
+    height: 300px;
+    background-color: orange;
+}
+div.main_content{
+    margin: 0% 0% 0% 0%;
+    width: 100%;
+    height: 3600px;
+}
+div.random_facts{
+    float: left;
+    width: 20%;
+    height: inherit;
+    background-color: blue;
+}
+div.about{
+    float: right;
+    width: 80%;
+    height: 900px;
+    background-color: purple;
+}
+div.techs{
+    float: right;
+    width: 80%;
+    height: 900px;
+    background-color: yellow;
+}
+div.patch_notes{
+    float: right;
+    width: 80%;
+    height: 900px;
+    background-color: red;
+}
+div.devs{
+    float: right;
+    width: 80%;
+    height: 900px;
+    background-color: green;
+}
+footer.contact_us{
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    height: 300px;
+    background-color: brown;
+}

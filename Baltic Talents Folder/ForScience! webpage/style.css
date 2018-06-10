@@ -1,47 +1,42 @@
 html, body{
-    margin: 0%;
-    padding: 0%;
-    min-width:610px;
+    margin: 0px auto;
+    padding: 0px;
+    height:100%;
+    min-height:100%;
+    background-color: rgb(45, 46, 48);
+    /* min-width:610px; */
 }
 main{
-    height:100%;
-    margin: 0px;
-    padding:0px;
-    background-color: rgb(19, 20, 22);
+    height:inherit;
+    background-color: rgb(45, 46, 48);
 }
 div.main_content{
-    /* position: relative; */
     width: 100%;
-    height: 3600px;
+    height: inherit;
 }
-div.about{
-    /* position: absolute; */
+div.qa{
     width: inherit;
-    height: 16%;
-    max-height: 50%;
-    background-color: rgb(19, 20, 22);
+    background-color: rgb(45, 46, 48);
+    min-width: 650px;
 }
-div.techs{
+/* div.techs{
     width: inherit;
     height: 900px;
-    background-color: yellow;
 }
 div.patch_notes{
     width: inherit;
     height: 900px;
-    background-color: red;
 }
 div.devs{
     width: inherit;
     height: 900px;
-    background-color: green;
-}
-footer.contact_us{
-    padding: 0%;
-    width: 100%;
-    display: flex;
-    height: 300px;
-    background-color: brown;
+} */
+footer.copyright{
+    /* padding: 0%; */
+    width: inherit;
+    /* display: flex; */
+    bottom: 0;
+    background-color: rgb(58, 216, 92);
 }
 
 /* Navbar */
@@ -61,38 +56,65 @@ ul.navbar-nav li.nav-item a.nav-link{
 
 /* About */
 
-section{
-    width: 100%;
+section.about_info{
     height: 100%;
+}
+article.about_warning{
+    width: 100%;
+    display: inline-block;
+    background-color: rgb(45, 46, 48);
+}
+article.one_p{
+    padding: 10px 0px 0px 40px;
+}
+article.two_one_p{
+    padding: 10px 10px 0px 10px;
+}
+article.two_two_p{
+    padding: 10px 40px 0px 0px;
 }
 article.one_p, article.two_one_p, article.two_two_p{
     height: inherit;
     width: inherit;
-    background-color: rgb(19, 20, 22);
     float: left;
     width: 33.33%;
-    padding: 10px;
-}
-p.about_title, p.about_topic, p.about_text{
-    color: white;
-    font-family: 'Raleway', sans-serif;
-}
-p.about_title{
-    background-color: rgb(33, 147, 153);
-    text-align: center;
-    font-size: 80px;
-    padding: 10px;
-    margin: 10px;
-}
-p.about_topic{
-    background-color: rgb(242, 187, 21);
-    text-align: center;
-    font-size: 36px;
-    padding: 2px;
+    margin-bottom: 0px;
 }
 p.about_text{
     background-color: rgb(35, 39, 43);
     text-align: justify;
     font-size: 26px;
     padding: 2px;
+    color: rgb(251, 253, 253);
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Footer */
+
+section.contact_us{
+    /* background-color: rgb(51, 191, 79); */
+    width: 100%;
+    height: 100%;
+}
+article.ask_devs, article.stay_in_touch{
+    float: left;
+    width: 50%;
+    padding: 40px 80px 40px 80px;
+}
+p.ask_devs_name, p.ask_devs_text{
+    font-size: 18px;
+    color: rgb(35, 39, 43);
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(114, 118, 124);
+}
+input[type="text"]{
+    padding: 0px 10px 0px 10px;
+    background-color: rgb(204, 210, 221);
+    border: none;
+    max-width: 300px;
+}
+article.disclamer{
+    display: inline-block;
+    width: inherit;
+    background-color: rgb(51, 191, 79);
 }

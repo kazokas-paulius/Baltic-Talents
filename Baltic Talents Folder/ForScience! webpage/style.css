@@ -31,7 +31,7 @@ div.devs{
     width: inherit;
     height: 900px;
 } */
-footer.copyright{
+footer{
     /* padding: 0%; */
     width: inherit;
     /* display: flex; */
@@ -91,27 +91,76 @@ p.about_text{
 
 /* Footer */
 
-section.contact_us{
+form.contact_us{
     /* background-color: rgb(51, 191, 79); */
     width: 100%;
     height: 100%;
 }
-article.ask_devs, article.stay_in_touch{
+form.ask_devs{
     float: left;
-    width: 50%;
+    width: 30%;
     padding: 40px 80px 40px 80px;
 }
-p.ask_devs_name, p.ask_devs_text{
+section.stay_in_touch{
+    float: left;
+    width: 70%;
+    padding: 40px 80px 40px 80px;
+}
+section.social_media{
+    background-color: rgb(54, 201, 83);
+    display: inline-block;
+    width: inherit;
+    padding: 10px 80px 10px 80px;
+}
+label.ask_devs_name, label.ask_devs_text{
     font-size: 18px;
     color: rgb(35, 39, 43);
     font-family: 'Raleway', sans-serif;
     background-color: rgb(114, 118, 124);
 }
+label.ask_devs_name{
+    margin: 0;
+}
 input[type="text"]{
-    padding: 0px 10px 0px 10px;
+    padding: 0px 15px 0px 10px;
     background-color: rgb(204, 210, 221);
     border: none;
+    min-width: 300px;
     max-width: 300px;
+}
+textarea{
+    vertical-align: top;
+    background-color: rgb(204, 210, 221);
+}
+button.ask_devs_button{
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    display: inline-block;
+    background-color: rgb(247, 66, 66);
+}
+article.fixd_top{
+    margin-top: 0;
+}
+article.stay_in_touch_info{
+    float: left;
+    width: 50%;
+    /* margin-top: 40px; */
+}
+p.stay_in_touch_address{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: rgb(35, 39, 43);
+    margin-top: -20px;
+}
+a.link_text{
+    text-decoration: none;
+}
+div.social_icons{
+    text-align: center;
+}
+div.lt_text, div.usa_text{
+    padding-top: 20px;
 }
 article.disclamer{
     display: inline-block;

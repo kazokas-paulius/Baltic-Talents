@@ -1,0 +1,34 @@
+﻿1. HTML'as jums jau yra duotas, jūsų tikslas panaudoti vakarykščius
+CSS selektorius, kad išgauti panašų efektą. 
+HTML'o keisti negalima, klasių, id dasirašyti irgi negalima.
+
+
+
+2. Žiūrėti homework.png nuotrauką:
+
+    
++2.1 Šriftas "Merriweather", jį reikės prisiskirti ant body elemento
+
+    
++2.2 Tarpai tarp eilučių apsirašo su line-height taisykle, pvz. line-height: 1.5
+
+    
++2.3 Užsidėti :hover, :active būsenas ant anchorų. :hover spalva raudona, :active pastorina tekstą su font-weight: bold
+
+    
++2.4 Kiekviena h3 antraštė einanti iškarto po h2 turi turi būti "Open Sans" šrifto
+    ir turėti lightgrey spalvą
+
+    
++2.5 Kiekvienas paragrafas einantis iškarto po h4 antraštės turi būti mažesnis ir turėti
+    pilką foną, taip pat atitraukimus nuo kraštų
+
+    
++2.6 Nelyginis straipsnis turi turėti juodą foną, baltą tekstą, atitraukimus į vidų, atitraukimus į išorę
+
+    
++2.7 Kiekvieno straipsnio paskutinis anchoras (linkas) turi atrodyti kaip mygtukas. Tam reikės užsidėti
+    borderius ir vidinius atitraukimus
+
+    
++2.8 Nuotraukai reikia nusirodyti plotį 200px, taip pat uždėti floatą ir priskirti vidinius arba išorinius atitraukimus

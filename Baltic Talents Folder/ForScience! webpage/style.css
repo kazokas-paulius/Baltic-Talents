@@ -24,14 +24,16 @@ div.techs{
     background-color: rgb(45, 46, 48);
     min-width: 650px;
 }
-/* div.patch_notes{
+div.developers_journal{
     width: inherit;
-    height: 900px;
+    background-color: rgb(45, 46, 48);
+    min-width: 650px;
 }
-div.devs{
+div.patch_notes{
     width: inherit;
-    height: 900px;
-} */
+    background-color: rgb(45, 46, 48);
+    min-width: 650px;
+}
 footer{
     /* padding: 0%; */
     width: inherit;
@@ -99,12 +101,12 @@ form.contact_us{
 }
 form.ask_devs{
     float: left;
-    width: 30%;
+    width: 40%;
     padding: 40px 80px 40px 80px;
 }
 section.stay_in_touch{
     float: left;
-    width: 70%;
+    width: 60%;
     padding: 40px 80px 40px 80px;
 }
 section.social_media{
@@ -168,3 +170,15 @@ article.disclamer{
     width: inherit;
     background-color: rgb(51, 191, 79);
 }
+
+/* Techs */
+
+div.techs section{
+
+}
+
+/* Developer Journal */
+
+
+
+/* Patch Notes */

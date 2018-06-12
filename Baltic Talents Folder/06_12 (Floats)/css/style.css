@@ -53,6 +53,7 @@ footer p{
     float: right;
 }
 a{
+    display: inline;
     text-decoration: none;
     color: black;
     font-size: 30px;

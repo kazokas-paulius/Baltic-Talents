@@ -19,11 +19,12 @@ div.qa{
     background-color: rgb(45, 46, 48);
     min-width: 650px;
 }
-/* div.techs{
+div.techs{
     width: inherit;
-    height: 900px;
+    background-color: rgb(45, 46, 48);
+    min-width: 650px;
 }
-div.patch_notes{
+/* div.patch_notes{
     width: inherit;
     height: 900px;
 }

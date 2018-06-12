@@ -7,37 +7,24 @@ html, body{
     /* min-width:610px; */
 }
 main{
+    display: block;
     height:inherit;
     background-color: rgb(45, 46, 48);
 }
 div.main_content{
+    display: block;
     width: 100%;
     height: inherit;
 }
-div.qa{
-    width: inherit;
-    background-color: rgb(45, 46, 48);
-    min-width: 650px;
-}
-div.techs{
-    width: inherit;
-    background-color: rgb(45, 46, 48);
-    min-width: 650px;
-}
-div.developers_journal{
-    width: inherit;
-    background-color: rgb(45, 46, 48);
-    min-width: 650px;
-}
-div.patch_notes{
+div.qa, div.techs, div.developers_journal, div.patch_notes, div.gallery{
+    display: inline-block;
     width: inherit;
     background-color: rgb(45, 46, 48);
     min-width: 650px;
 }
 footer{
-    /* padding: 0%; */
+    display: block;
     width: inherit;
-    /* display: flex; */
     bottom: 0;
     background-color: rgb(58, 216, 92);
 }
@@ -55,6 +42,13 @@ ul.navbar-nav li.nav-item a.nav-link{
     color: white;
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
+}
+
+/* GALLERY */
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
 }
 
 /* About */
@@ -173,19 +167,10 @@ article.disclamer{
 
 /* Techs */
 
-div.techs section{
 
-}
 
 /* Developer Journal */
 
 
 
 /* Patch Notes */
-
-
-
-/* Gallery */
-
-/* sucentruoti nuotraukas */
-/* ideti normalias nuotraukas :D */

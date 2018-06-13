@@ -17,7 +17,7 @@ div.main_content{
     display: block;
     width: 100%;
     height: inherit;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(45, 46, 48);
 }
 div.qa, div.techs, div.developers_journal, div.patch_notes, div.gallery{
     display: inline-block;

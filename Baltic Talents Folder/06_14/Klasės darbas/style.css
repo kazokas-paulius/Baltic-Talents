@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+div.a, div.b, div.c, div.d, div.e, div.f, div.g, div.h, div.i{
+    border: 10px solid white;
+}
+div.a, div.b, div.d, div.e, div.i{
+    height: 230px;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+div.top{
+    height: 300px;
+}
+div.a, div.b{
+    height: 100%;
+    background-color: green;
+    float: left;
+}
+div.a{
+    display: inline;
+    width: 75%;
+}
+div.b{
+    display: inline;
+    width: 25%;
+}
+div.middle{
+    height: 1000px;
+}
+div.c{
+    display: inline-block;
+    width: 25%;
+    background-color: yellow;
+}
+div.c, div.degfh, div.g, div.h{
+    float:left;
+    height: 100%;
+}
+div.degfh{
+    display: inline;
+    width: 75%;
+}
+div.deg{
+    float: left;
+    display: inline-block;
+    width: 66.5%;
+}
+div.fh{
+    float: left;
+    display: inline-block;
+    width: 33.5%;
+}
+div.d, div.e, div.g{
+    display: block;
+    background-color: blue;
+}
+div.f, div.h{
+    display: block;
+    background-color: red;
+}
+div.f{
+    display: flex;
+    height: 460px;
+}
+div.gh{
+    display: inline-block;
+    width: 100%;
+    height: 54%;
+}
+div.g, div.h{
+    display: inline-block;
+    float: left;
+}
+div.g{
+    width: 66.5%;
+}
+div.h{
+    width: 33.5%;
+}
+div.bottom{
+    bottom: 0;
+}
+div.i{
+    background-color: cyan;
+}

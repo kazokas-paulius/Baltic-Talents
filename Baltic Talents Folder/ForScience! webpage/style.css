@@ -205,10 +205,11 @@ article.pn_two{
 }
 article.pn_one, article.pn_two{
     height: 100%;
-    width: inherit;
+    /* width: inherit; */
     float: left;
     width: 50%;
     margin-bottom: 0px;
+    bottom: 0;
 }
 p.pn_text{
     background-color: rgb(35, 39, 43);

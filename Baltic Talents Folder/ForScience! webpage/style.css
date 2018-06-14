@@ -191,3 +191,30 @@ article.disclamer{
 
 
 /* Patch Notes */
+
+article.pn_head, article.pn_current{
+    width: 100%;
+    display: inline-block;
+    background-color: rgb(45, 46, 48);
+}
+article.pn_one{
+    padding: 10px 20px 10px 60px;
+}
+article.pn_two{
+    padding: 10px 60px 10px 20px;
+}
+article.pn_one, article.pn_two{
+    height: 100%;
+    width: inherit;
+    float: left;
+    width: 50%;
+    margin-bottom: 0px;
+}
+p.pn_text{
+    background-color: rgb(35, 39, 43);
+    text-align: justify;
+    font-size: 26px;
+    padding: 2px;
+    color: rgb(251, 253, 253);
+    font-family: 'Raleway', sans-serif;
+}

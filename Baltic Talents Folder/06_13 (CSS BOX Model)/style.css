@@ -22,9 +22,9 @@ main{
     margin: 10px 0px;
 }
 div:first-child{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-div:last-child{
+main div:last-child{
     margin-bottom: 12.5vw;
 }
 .block.stroked{
@@ -35,16 +35,18 @@ div:last-child{
     width: 25vw;
     height: 25vh;
     background-color: blue;
+    margin-bottom: 20px;
 }
 .rectangle{
     width: 60vw;
-    height: 25vh;
+    /* height: 25vw; */
     background-color: brown;
-    margin: 10px 0px;
+    /* margin-bottom: 20px; */
 }
 .rectangle.stroked:hover{
     background-color: red;
 }
 .rectangle.stroked{
+    height: 25vh;
     background-color: yellow;
 }

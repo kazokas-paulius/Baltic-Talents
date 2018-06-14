@@ -1,0 +1,60 @@
+﻿
+
+1. Jūsų tikslas yra sukoduoti 5 puslapių tinklalapį.
+
+
+2. Naudoti geriausias praktikas:
+
+    - apsirašyti tvarkingai <head> dalį su visa meta informacija
+
+    - naudoti semantiškus tagus
+
+    - naudoti klases, id
+
+    - pasitikrinti kodą su w3c validatoriumi
+
+
+2. Pradinė struktūra jau yra sudėta, sukurti reikalingi
+puslapiai ir linkai į juos:
+
+    - index.html (Home puslapis)
+
+    - blog.html (Blog puslapis)
+
+    - projects.html (Projects puslapis)
+
+    - project.html (Project puslapis)
+
+    - about.html (About puslapis)
+
+
+3. Išdėstymui naudokit flex'ą arba float'us, kaip jum patogiau.
+
+
+4. Nekreipkit dėmesį į didžiulį tarpą viršuje blog.png ir project.png nuotraukose.
+
+
+5. Naudokit Font Awesome įkonėles, jos neprivalo sutapti - įdėkite tokias kokias rasite.
+
+
+6. Informacija:
+
+    Spalvos:
+
+        - pilka (#aaa)
+
+        - juoda (#222)
+
+        - violetinė (indigo)
+
+        - žydra, twitter (#4fafed)
+
+        - mėlyna, facebook (#4361b3)
+
+    Šriftai:
+        - "Helvetica Neue", Helvetica, sans-serif
+
+7.
+
+ "Social" mygtukai neprivalo veikti, tiesiog stilizuokit juos
+.

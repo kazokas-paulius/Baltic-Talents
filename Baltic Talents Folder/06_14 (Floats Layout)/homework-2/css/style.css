@@ -1,0 +1,75 @@
+body{
+    font-family: "Merriweather";
+    margin: 0;
+    width: 100%;
+}
+header{
+    background-color: lightgrey;
+}
+header img{
+    display: block;
+    margin: 0 auto;
+}
+nav{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    word-spacing: 25px;
+    padding: 10px 0px;
+}
+nav a{
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(63, 57, 57);
+}
+h1, h2, h3, a{
+    font-family: "Raleway";
+}
+main{
+    width: 100%;
+    display: flex;
+    background-color: rgb(247, 247, 247);
+}
+div.left, div.right{
+    float:left;
+    padding: 0px 20px;
+}
+div.left{
+    width: 60%;
+}
+div.left video{
+    padding: 20px 0px;
+    width:90%;
+    height: 100%;
+}
+article.left_a{
+    height: inherit;
+}
+article.left_a h2, div.right h2{
+    font-size: 26px;
+}
+article.left_a p{
+    text-align: justify;
+}
+div.right{
+    width: 40%;
+}
+div.right iframe{
+    padding-top: 20px;
+    width: 70%;
+    height: 60%;
+}
+footer{
+    display: block;
+    background-color: black;
+    text-align: center;
+    height: auto;
+}
+footer h3{
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}

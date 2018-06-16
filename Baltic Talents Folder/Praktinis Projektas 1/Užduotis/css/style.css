@@ -4,6 +4,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     /* min-width: 650px; */
     text-align: center;
+    /* background-color: red; */
 }
 nav{
     display: block;

@@ -1,15 +1,22 @@
+* {
+  box-sizing: border-box;
+}
 body{
     margin: 0;
     width: 100%;
     height: 100%;
+    min-width: 630px;
+    background-color: rgb(222, 222, 222);
+    font-size: 2vh;
 }
 main{
     width: 100%;
     height: inherit;
+    display: block;
 }
 nav{
     float: right;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 ul{
     margin-top: 2px;
@@ -27,7 +34,6 @@ li a{
     border: 2px solid rgb(38, 144, 173);
     color: rgb(255, 255, 255);
     background-color: rgb(43, 165, 202);
-    font-size: 26px;
     margin-right: -4px;
     padding: 10px 30px;
 }
@@ -35,19 +41,16 @@ h2{
     font-family: 'PT Sans', sans-serif;
 }
 .logo{
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    border: 1px solid black;
+    margin: 40px 0px 20px 20px;
     width: 300px;
 }
 .main_image_main{
     margin-left: 20px;
     margin-bottom: 20px;
-    width: 97%;
+    width: 96%;
 }
 .tree_section{
-    width: 100%;
+    width: 97%;
     display: inline-block;
 }
 .three_fork{
@@ -55,20 +58,22 @@ h2{
     float: left;
     width: 33%;
     margin-top: 20px;
+    margin-right: 0px;
 }
 .three_fork img{
     position: relative;
     padding-left: 20px;
-    width: 94%;
+    width: 96.7%;
     height: 200px;
 }
 .fork_article{
     text-align: justify;
     padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }
 .git{
-    width: 97%;
+    width: 96%;
     display: inline-block;
     padding-bottom: 20px;
     margin-left: 20px;
@@ -87,11 +92,13 @@ h2{
     border: 1px solid rgb(38, 144, 173);
     color: rgb(255, 255, 255);
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
     border-radius: 4px;
 }
+footer{
+    display: block;
+}
 footer p{
-    font-size: 20px;
+    font-size: 2vh;
     margin-left: 20px;
 }
 footer p, footer ul{
@@ -103,8 +110,20 @@ footer p, footer ul{
 }
 .footah li a{
     color: rgb(43, 165, 202);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(222, 222, 222);
     border: none;
     margin-left: 20px;
-    font-size: 20px;
+}
+
+@media only screen and (max-width: 650px){
+    nav ul li a{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footah{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }

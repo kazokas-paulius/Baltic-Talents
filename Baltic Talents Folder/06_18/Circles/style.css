@@ -37,18 +37,21 @@ span{
     left: 20%;
     border: 1vw solid rgba(255, 0, 0, 1);
     background-color: rgba(255, 0, 0, 0.6);
+    z-index: 1;
 }
 .green{
     left: 3%;
     bottom: 3%;
     border: 1vw solid rgba(0, 255, 0, 1);
     background-color: rgba(0, 255, 0, 0.6);
+    z-index: 2;
 }
 .blue{
     right: 3%;
     bottom: 3%;
     border: 1vw solid rgba(0, 0, 255, 1);
     background-color: rgba(0, 0, 255, 0.6);
+    z-index: 3;
 }
 .red > span{
     top: 40%;

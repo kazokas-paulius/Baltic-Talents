@@ -19,7 +19,7 @@ nav.home_nav{
     padding-top: 15px;
     word-spacing: 40px;
 }
-nav.home_nav a{
+nav.home_nav p{
     text-decoration: none;
     color: rgb(80,0,140);
     font-size: 20px;

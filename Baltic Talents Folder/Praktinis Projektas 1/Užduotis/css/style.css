@@ -90,10 +90,10 @@ nav.about_nav a{
     font-weight: bold;
 }
 .blog_info_title + .blog_info_date{
-    margin-left: 25%;
+    margin-left: 31%;
 }
 mark{
-    background-color: lightcyan;
+    background-color: rgb(238, 238, 238);
 }
 .blog_info span:nth-child(2n){
     display: inline-block;
@@ -105,13 +105,15 @@ mark{
     font-size: 2vh;
     color: rgb(34,34,34);
     margin-top: 2%;
-    margin-left: -15%;
+    margin-left: 33%;
+    text-align: left;
 }
 .blog_info_date{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: rgb(200,200,200);
     transform: translateY(-100%);
+    text-align: right;
 }
 
 /* Projects */
@@ -130,7 +132,7 @@ nav.projects_nav a{
     font-weight: bold;
 }
 .projects_info_title + .projects_info_date{
-    margin-left: 30%;
+    margin-left: 30.5%;
 }
 .projects_info span:nth-child(2n){
     display: inline-block;
@@ -146,13 +148,15 @@ nav.projects_nav a{
     font-size: 2vh;
     color: rgb(34,34,34);
     margin-top: 2%;
-    margin-left: -14%;
+    margin-left: 32.5%;
+    text-align: left;
 }
 .projects_info_date{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: rgb(200,200,200);
     transform: translateY(-100%);
+    text-align: left;
 }
 
 @media screen and (max-width: 515px){
@@ -173,24 +177,6 @@ nav.projects_nav a{
     figure.about_img, figure.projects_img{
         margin-top: 80px;
     }
-    .blog_info_title + .blog_info_date{
-        margin-left: 0%;
-    }
-    .blog_info_title{
-        display: block;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        font-size: 2vh;
-        color: rgb(34,34,34);
-        margin-top: 2%;
-        margin-left: 0%;
-    }
-    .blog_info_date{
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        color: rgb(200,200,200);
-        transform: translateY(0%);
-    }
 }
 @media screen and (max-width: 1350px){
     .projects_info_title + .projects_info_date{
@@ -204,8 +190,28 @@ nav.projects_nav a{
         color: rgb(34,34,34);
         margin-top: 2%;
         margin-left: 0%;
+        text-align: center;
     }
     .projects_info_date{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        color: rgb(200,200,200);
+        transform: translateY(0%);
+    }
+    .blog_info_title + .blog_info_date{
+        margin-left: 0%;
+    }
+    .blog_info_title{
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 2vh;
+        color: rgb(34,34,34);
+        margin-top: 2%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .blog_info_date{
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         color: rgb(200,200,200);

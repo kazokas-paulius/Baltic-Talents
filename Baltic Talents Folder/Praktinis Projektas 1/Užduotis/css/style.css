@@ -19,7 +19,7 @@ nav.home_nav{
     padding-top: 15px;
     word-spacing: 40px;
 }
-nav.home_nav p{
+nav.home_nav a{
     text-decoration: none;
     color: rgb(80,0,140);
     font-size: 20px;
@@ -131,14 +131,15 @@ nav.projects_nav a{
     font-size: 20px;
     font-weight: bold;
 }
-.projects_info_title + .projects_info_date{
-    margin-left: 30.5%;
-}
-.projects_info span:nth-child(2n){
-    display: inline-block;
-}
 .projects_info i{
     margin-right: 0.4%;
+}
+.projects_info_forScience, .projects_info_snake2D{
+    display: block;
+    margin-left: 32.5%;
+    margin-top: 0%;
+    text-decoration: none;
+    color: rgb(5, 5, 5);
 }
 .projects_info_title{
     text-decoration: none;
@@ -147,18 +148,55 @@ nav.projects_nav a{
     font-weight: bold;
     font-size: 2vh;
     color: rgb(34,34,34);
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 32.5%;
     text-align: left;
 }
 .projects_info_date{
+    position: absolute;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    margin-left: 12.5%;
     color: rgb(200,200,200);
-    transform: translateY(-100%);
-    text-align: left;
+    transform: translateY(-200%);
+    /* text-align: left; */
 }
-
+@media screen and (max-width: 375px){
+    nav.home_nav a{
+        text-decoration: none;
+        color: rgb(80,0,140);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    hr{
+        border: 1px solid rgb(207, 207, 208);
+        margin: 40px 5px 8px 5px;
+        display: inline-block;
+        width: 100%;
+    }
+    /* neveikia */
+    nav.projects_nav{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 15px;
+        word-spacing: 20px;
+        width: 100%;
+        padding-left: 16%;
+    }
+    .projects_info_title{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* neveikia */
+    .projects_info_date{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        color: rgb(200,200,200);
+        transform: translateY(-43%);
+        margin-left: -10.75%;
+    }
+}
 @media screen and (max-width: 515px){
     nav.home_nav{
         display: flex;
@@ -166,9 +204,31 @@ nav.projects_nav a{
         flex-direction: column;
         margin-bottom: 1%;
     }
+    /* neveikia */
+    nav.projects_nav{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 15px;
+        word-spacing: 20px;
+    }
+    /* neveikia */
+    .projects_info_date{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        color: rgb(200,200,200);
+        transform: translateY(-34%);
+        margin-left: -7.75%;
+    }
+    hr{
+        border: 1px solid rgb(207, 207, 208);
+        margin: 40px 20px 8px 20px;
+        display: inline-block;
+        width: 39%;
+    }
 }
 @media screen and (max-width: 1000px){
-    nav.about_nav, nav.projects_nav{
+    nav.about_nav{
         margin-top: 20px;
         text-align: center;
         margin: 0 auto;
@@ -176,6 +236,17 @@ nav.projects_nav a{
     }
     figure.about_img, figure.projects_img{
         margin-top: 80px;
+    }
+    h2{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .projects_info_date{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        color: rgb(200,200,200);
+        transform: translateY(-34%);
+        margin-left: -7.75%;
     }
 }
 @media screen and (max-width: 1350px){
@@ -197,6 +268,7 @@ nav.projects_nav a{
         font-weight: bold;
         color: rgb(200,200,200);
         transform: translateY(0%);
+        margin-left: -3.15%;
     }
     .blog_info_title + .blog_info_date{
         margin-left: 0%;
@@ -216,6 +288,22 @@ nav.projects_nav a{
         font-weight: bold;
         color: rgb(200,200,200);
         transform: translateY(0%);
+    }
+    .projects_info_forScience{
+        display: block;
+        margin-left: 0.5%;
+        text-align: center;
+        transform: translateX(0%) translateY(-20%);
+        text-decoration: none;
+        color: rgb(5, 5, 5);
+    }
+    .projects_info_snake2D{
+        display: block;
+        margin-left: 0.5%;
+        text-align: center;
+        transform: translateX(0%) translateY(-20%);
+        text-decoration: none;
+        color: rgb(5, 5, 5);
     }
 }
 

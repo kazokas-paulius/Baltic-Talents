@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    min-width: 375px;
+    min-width: 380px;
     width: 100%;
     margin: 0;
     font-family: 'helveticaneueregular';
@@ -154,28 +154,22 @@ nav.projects_nav a{
 }
 .projects_info_date{
     position: absolute;
+    display: block;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    margin-left: 12.5%;
+    margin-left: 62%;
     color: rgb(200,200,200);
     transform: translateY(-200%);
-    /* text-align: left; */
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 380px){
     nav.home_nav a{
         text-decoration: none;
         color: rgb(80,0,140);
         font-size: 20px;
         font-weight: bold;
     }
-    hr{
-        border: 1px solid rgb(207, 207, 208);
-        margin: 40px 5px 8px 5px;
-        display: inline-block;
-        width: 100%;
-    }
     /* neveikia */
-    nav.projects_nav{
+    #p_nav{
         display: block;
         text-align: center;
         margin: 0 auto;
@@ -189,12 +183,9 @@ nav.projects_nav a{
         padding-right: 10px;
     }
     /* neveikia */
-    .projects_info_date{
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        color: rgb(200,200,200);
-        transform: translateY(-43%);
-        margin-left: -10.75%;
+    #pi_date{
+        transform: translateY(-43%) !important;
+        margin-left: 40.25% !important;
     }
 }
 @media screen and (max-width: 515px){
@@ -204,7 +195,6 @@ nav.projects_nav a{
         flex-direction: column;
         margin-bottom: 1%;
     }
-    /* neveikia */
     nav.projects_nav{
         display: block;
         text-align: center;
@@ -212,19 +202,9 @@ nav.projects_nav a{
         padding-top: 15px;
         word-spacing: 20px;
     }
-    /* neveikia */
+    /* neveikia :CCCCCCCCCCCCCCCC */
     .projects_info_date{
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        color: rgb(200,200,200);
-        transform: translateY(-34%);
-        margin-left: -7.75%;
-    }
-    hr{
-        border: 1px solid rgb(207, 207, 208);
-        margin: 40px 20px 8px 20px;
-        display: inline-block;
-        width: 39%;
+        margin-left: 42.85% !important;
     }
 }
 @media screen and (max-width: 1000px){
@@ -241,18 +221,15 @@ nav.projects_nav a{
         padding-left: 10px;
         padding-right: 10px;
     }
-    .projects_info_date{
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        color: rgb(200,200,200);
-        transform: translateY(-34%);
-        margin-left: -7.75%;
+    span.projects_info_date{
+        transform: translateY(-34%) !important;
+        margin-left: 45.85%;
     }
 }
 @media screen and (max-width: 1350px){
-    .projects_info_title + .projects_info_date{
+    /* .projects_info_title + .projects_info_date{
         margin-left: 0%;
-    }
+    } */
     .projects_info_title{
         display: block;
         font-family: 'Open Sans', sans-serif;
@@ -264,11 +241,8 @@ nav.projects_nav a{
         text-align: center;
     }
     .projects_info_date{
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        color: rgb(200,200,200);
         transform: translateY(0%);
-        margin-left: -3.15%;
+        margin-left: 46.85%;
     }
     .blog_info_title + .blog_info_date{
         margin-left: 0%;

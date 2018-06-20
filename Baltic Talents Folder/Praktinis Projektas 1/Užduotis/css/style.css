@@ -134,6 +134,9 @@ nav.projects_nav a{
 .projects_info i{
     margin-right: 0.4%;
 }
+.projects_info span *{
+    transform: translateY(-200%);
+}
 .projects_info_forScience, .projects_info_snake2D{
     display: block;
     margin-left: 32.5%;
@@ -168,7 +171,6 @@ nav.projects_nav a{
         font-size: 20px;
         font-weight: bold;
     }
-    /* neveikia */
     #p_nav{
         display: block;
         text-align: center;
@@ -182,7 +184,6 @@ nav.projects_nav a{
         padding-left: 10px;
         padding-right: 10px;
     }
-    /* neveikia */
     #pi_date{
         transform: translateY(-43%) !important;
         margin-left: 40.25% !important;
@@ -202,7 +203,6 @@ nav.projects_nav a{
         padding-top: 15px;
         word-spacing: 20px;
     }
-    /* neveikia :CCCCCCCCCCCCCCCC */
     .projects_info_date{
         margin-left: 42.85% !important;
     }
@@ -227,9 +227,9 @@ nav.projects_nav a{
     }
 }
 @media screen and (max-width: 1350px){
-    /* .projects_info_title + .projects_info_date{
+    .projects_info_title + .projects_info_date{
         margin-left: 0%;
-    } */
+    }
     .projects_info_title{
         display: block;
         font-family: 'Open Sans', sans-serif;

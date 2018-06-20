@@ -74,16 +74,16 @@ hr{
     color: rgb(207, 207, 208);
 }
 
-/* About */
+/* Blog */
 
-nav.about_nav{
+nav.blog_nav{
     float:right;
     margin-top: 20px;
     margin-left: -338px;
     padding-right: 50px;
     word-spacing: 24px;
 }
-nav.about_nav a{
+nav.blog_nav a{
     text-decoration: none;
     color: rgb(80,0,140);
     font-size: 20px;
@@ -164,6 +164,75 @@ nav.projects_nav a{
     color: rgb(200,200,200);
     transform: translateY(-200%);
 }
+
+/* About */
+
+.about_nav{
+    float:right;
+    margin-top: 20px;
+    margin-left: -338px;
+    padding-right: 50px;
+    word-spacing: 24px;
+}
+nav.about_nav a{
+    text-decoration: none;
+    color: rgb(80,0,140);
+    font-size: 20px;
+    font-weight: bold;
+}
+figure.about_img img{
+    border-radius: 0%;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+.about_content{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.about_content p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.3em;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+}
+.about_skills, .about_projects{
+    text-align: left;
+    width: 50%;
+}
+.about_skills ul, .about_projects ul{
+    margin-left: 5%;
+}
+.about_skills ul li, .about_projects ul li{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7em;
+}
+.about_skills h2{
+    padding-top: 15%;
+    margin-bottom: 4%;
+    margin-left: -72%;
+    font-family: 'helveticaneuebold';
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(34,34,34);
+}
+.about_projects h2{
+    padding-top: 7%;
+    margin-bottom: 4%;
+    margin-left: -60%;
+    font-family: 'helveticaneuebold';
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(34,34,34);
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 380px){
     nav.home_nav a{
         text-decoration: none;
@@ -208,13 +277,13 @@ nav.projects_nav a{
     }
 }
 @media screen and (max-width: 1000px){
-    nav.about_nav{
+    nav.blog_nav{
         margin-top: 20px;
         text-align: center;
         margin: 0 auto;
         word-spacing: 20px;
     }
-    figure.about_img, figure.projects_img{
+    figure.blog_img, figure.projects_img{
         margin-top: 80px;
     }
     h2{

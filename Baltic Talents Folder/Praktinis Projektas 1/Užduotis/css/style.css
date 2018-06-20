@@ -190,6 +190,10 @@ figure.about_img img{
     margin-left: 20%;
     margin-right: 20%;
 }
+.about_content h2{
+    margin-top: -3%;
+    margin-bottom: 3%;
+}
 .about_content p{
     font-family: 'Open Sans', sans-serif;
     line-height: 1.3em;
@@ -197,42 +201,69 @@ figure.about_img img{
     font-size: 20px;
     font-weight: 500;
 }
-.about_skills, .about_projects{
+.about_skills, .about_projects, .about_personalTraits, .about_education, .about_experience, .about_other{
     text-align: left;
     width: 50%;
 }
-.about_skills ul, .about_projects ul{
+.about_skills ul, .about_projects ul, .about_personalTraits ul, .about_education ul, .about_experience ul, .about_other ul{
     margin-left: 5%;
 }
-.about_skills ul li, .about_projects ul li{
+.about_skills ul li, .about_projects ul li, .about_personalTraits ul li, .about_education ul li, .about_experience ul li, .about_other ul li{
     font-family: 'Open Sans', sans-serif;
     line-height: 1.7em;
 }
-.about_skills h2{
-    padding-top: 15%;
-    margin-bottom: 4%;
-    margin-left: -72%;
-    font-family: 'helveticaneuebold';
-    font-size: 50px;
-    font-weight: 500;
-    color: rgb(34,34,34);
-}
-.about_projects h2{
+.about_skills h2, .about_projects h2, .about_personalTraits h2, .about_education h2, .about_experience h2, .about_other h2{
     padding-top: 7%;
     margin-bottom: 4%;
-    margin-left: -60%;
     font-family: 'helveticaneuebold';
     font-size: 50px;
     font-weight: 500;
     color: rgb(34,34,34);
 }
-
-
-
-
-
-
-
+.about_skills h2{
+    margin-left: -72%;
+}
+.about_projects h2{
+    margin-left: -60%;
+}
+.about_personalTraits h2{
+    margin-left: -31%;
+}
+.about_education h2{
+    margin-left: -52%;
+}
+.about_experience h2{
+    margin-left: -52%;
+}
+.about_other h2{
+    margin-left: -72%;
+}
+.about_education ul p, .about_experience ul p, .about_other ul p{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(120, 120, 120);
+}
+.about_experience ul p, .about_other ul p{
+    margin-bottom: 0px;
+}
+.about_experience ul li:not(:first-child){
+    padding-top: 20px;
+}
+.about_list_section{
+    width: 100%;
+    height: auto;
+    margin-left: 13%;
+}
+.about_first, .about_second, .about_third{
+    display: inline-block;
+}
+.about_first, .about_second, .about_third{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:flex-start;
+}
 @media screen and (max-width: 380px){
     nav.home_nav a{
         text-decoration: none;
@@ -257,6 +288,9 @@ figure.about_img img{
         transform: translateY(-43%) !important;
         margin-left: 40.25% !important;
     }
+    .about_content h1{
+        margin-left: -5%;
+    }
 }
 @media screen and (max-width: 515px){
     nav.home_nav{
@@ -275,6 +309,27 @@ figure.about_img img{
     .projects_info_date{
         margin-left: 42.85% !important;
     }
+    .about_skills h2{
+        margin-left: -15% !important;
+    }
+    .about_experience h2{
+        margin-left: -37% !important;
+    }
+    .about_education h2{
+        margin-left: -22% !important;
+    }
+    .about_projects h2{
+        margin-left: -10% !important;
+    }
+    .about_personalTraits h2{
+        margin-left: -16% !important;
+    }
+    .about_other h2{
+        margin-left: -12% !important;
+    }
+    .about_skills ul, .about_projects ul, .about_personalTraits ul, .about_education ul, .about_experience ul, .about_other ul{
+        margin-left: 16% !important;
+    }
 }
 @media screen and (max-width: 1000px){
     nav.blog_nav{
@@ -283,7 +338,7 @@ figure.about_img img{
         margin: 0 auto;
         word-spacing: 20px;
     }
-    figure.blog_img, figure.projects_img{
+    figure.blog_img, figure.projects_img, figure.about_img{
         margin-top: 80px;
     }
     h2{
@@ -293,6 +348,40 @@ figure.about_img img{
     span.projects_info_date{
         transform: translateY(-34%) !important;
         margin-left: 45.85%;
+    }
+    .about_first, .about_second, .about_third{
+        display: inline-block;
+    }
+    .about_first, .about_second, .about_third{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items:flex-start;
+    }
+    .about_list_section{
+        width: 100%;
+        height: auto;
+        margin-left: 13%;
+    }
+    .about_skills ul, .about_projects ul, .about_personalTraits ul, .about_education ul, .about_experience ul, .about_other ul{
+        margin-left: 0%;
+    }
+    .about_skills h2{
+        margin-left: -64%;
+    }
+    .about_experience h2{
+        margin-left: -14%;
+    }
+    .about_education h2{
+        margin-left: -22%;
+    }
+    .about_projects h2{
+        margin-left: -34%;
+    }
+    .about_personalTraits h2{
+        margin-left: -34%;
+    }
+    .about_other h2{
+        margin-left: -57%;
     }
 }
 @media screen and (max-width: 1350px){

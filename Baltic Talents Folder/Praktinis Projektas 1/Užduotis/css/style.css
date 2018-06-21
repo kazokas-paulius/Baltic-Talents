@@ -554,7 +554,7 @@ strong.important_text{
         padding-left: 10px;
         padding-right: 10px;
     }
-    #pi_date{
+    #pi_date_forScience, #pi_date_snake2D{
         transform: translateY(-43%) !important;
         margin-left: 40.25% !important;
     }

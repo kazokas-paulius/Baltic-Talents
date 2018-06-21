@@ -262,8 +262,112 @@ figure.about_img img{
 .about_first, .about_second, .about_third{
     display: flex;
     flex-direction: row-reverse;
-    align-items:flex-start;
+    align-items: flex-start;
 }
+
+/* Project */
+/* ForScience */
+
+figure.forScience_img img{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+.forScience_project_content, .forScience_project_whatsInside{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.forScience_project_content h2, .forScience_project_whatsInside h2{
+    font-family: 'helveticaneuebold';
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(34,34,34);
+}
+.forScience_project_date{
+    margin-top: 1%;
+}
+.forScience_project_author{
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+    border: 1px solid rgb(34,34,34);
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+.forScience_project_content h2{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.forScience_project_content p, .forScience_project_whatsInside p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.3em;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+}
+hr.separator{
+    border: 1px solid rgb(207, 207, 208);
+    margin: 40px;
+    display: inline-block;
+    width: 60%;
+}
+.forScience_structure_gameLevels{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.forScience_levelOne, .forScience_levelTwo, .forScience_levelThree{
+    position: relative;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.forScience_levelOne h3, .forScience_levelTwo h3, .forScience_levelThree h3{
+    font-family: 'helveticaneuebold';
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.forScience_levelOne figure, .forScience_levelTwo figure, .forScience_levelThree figure{
+    position: relative;
+    padding-top: 3%;
+}
+.forScience_levelOne figure figcaption, .forScience_levelTwo figure figcaption, .forScience_levelThree figure figcaption{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(34, 34, 34);
+}
+.gameLevels_pic{
+    border-radius: 0%;
+    display: block;
+    /* margin: 0 auto; */
+    width: 100%;
+}
+.gameLevels_text{
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: justify;
+}
+.forScience_levelOne{
+    background-color: yellow;
+}
+.forScience_levelTwo{
+    background-color: green;
+}
+.forScience_levelThree{
+    background-color: orange;
+}
+
+
+
+
+
+
 @media screen and (max-width: 380px){
     nav.home_nav a{
         text-decoration: none;

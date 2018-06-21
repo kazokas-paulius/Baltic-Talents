@@ -274,11 +274,19 @@ figure.forScience_img img{
     margin: 0 auto;
     width: 200px;
 }
-.forScience_project_content, .forScience_project_whatsInside{
+.forScience_project_content, .forScience_project_whatsInside, .forScience_requirements{
     margin-left: 20%;
     margin-right: 20%;
 }
-.forScience_project_content h2, .forScience_project_whatsInside h2{
+.forScience_project_content h2{
+    font-family: 'helveticaneuebold';
+    font-size: 44px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin: 0 auto;
+    margin-top: 0%;
+}
+.forScience_project_whatsInside h2, .forScience_requirements h2{
     font-family: 'helveticaneuebold';
     font-size: 35px;
     font-weight: 900;
@@ -308,7 +316,7 @@ figure.forScience_img img{
 hr.separator{
     border: 1px solid rgb(207, 207, 208);
     margin: 40px;
-    display: inline-block;
+    /* display: inline-block; */
     width: 60%;
 }
 .forScience_structure_gameLevels{
@@ -325,15 +333,15 @@ hr.separator{
 }
 .forScience_levelOne h3, .forScience_levelTwo h3, .forScience_levelThree h3{
     font-family: 'helveticaneuebold';
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 900;
     color: rgb(34, 34, 34);
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .forScience_levelOne figure, .forScience_levelTwo figure, .forScience_levelThree figure{
     position: relative;
-    padding-top: 3%;
+    padding-top: 2%;
 }
 .forScience_levelOne figure figcaption, .forScience_levelTwo figure figcaption, .forScience_levelThree figure figcaption{
     font-family: 'Open Sans', sans-serif;
@@ -345,7 +353,6 @@ hr.separator{
 .gameLevels_pic{
     border-radius: 0%;
     display: block;
-    /* margin: 0 auto; */
     width: 100%;
 }
 .gameLevels_text{
@@ -353,20 +360,179 @@ hr.separator{
     padding-right: 4%;
     text-align: justify;
 }
-.forScience_levelOne{
-    background-color: yellow;
+.forScience_requirements h2{
+    font-family: 'helveticaneuebold';
+    font-size: 44px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin: 0 auto;
+    margin-top: 0%;
 }
-.forScience_levelTwo{
-    background-color: green;
+.requirements_software ul{
+    display: flex;
 }
-.forScience_levelThree{
-    background-color: orange;
+.requirements_software ul li{
+    margin-left: 2%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(34, 34, 34);
+}
+.software h2, .gear h2{
+    font-family: 'helveticaneuebold';
+    font-size: 36px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.requirements_gear ul li{
+    margin-left: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(34, 34, 34);
+}
+.requirements_gear ul{
+    display: flex;
+    margin-left: 0%;
+}
+strong.important_text{
+    color: rgb(243, 0, 0);
+}
+.gear p{
+    word-spacing: 5px;
+}
+.source_link{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 233);
+}
+.forScience_extra h2{
+    font-family: 'helveticaneuebold';
+    font-size: 44px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin: 0 auto;
+    margin-top: 0%;
+}
+.forScience_extra h3{
+    font-size: 14px;
+}
+.forScience_documentation h2, .forScience_YTvideo h2, .forScience_gameplay_links h2{
+    font-family: 'helveticaneuebold';
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin: 0 auto;
+    margin-top: 1.5%;
+}
+.forScience_gameplay_links ul{
+    margin-left: -5%;
+}
+.forScience_gameplay_links ul li{
+    display: inline;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 3%;
+}
+.devs_contacts{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.devs_contacts h2{
+    font-family: 'helveticaneuebold';
+    font-size: 44px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin: 0 auto;
+    margin-top: 0%;
+}
+.paulius_contacts, .minde_contacts{
+    float: left;
+    width: 43%;
+    margin-left: 7%;
+    display: flex;
+}
+.polo_personal img{
+    margin-left: 20%;
+}
+.polo_photo{
+    width: 110px;
+}
+.minde_photo{
+    width: 120px;
+}
+.polo_personal h2, .minde_personal h2{
+    font-family: 'helveticaneuebold';
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    margin: 0 auto;
+}
+.polo_personal h2{
+    transform: translate(10.6%, -650%);
+}
+.minde_personal h2{
+    transform: translate(5%, -650%);
+}
+.polo_photo, .minde_photo{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border-radius: 50%;
+}
+.polo{
+    justify-content: flex-end;
+    text-align: left;
+    margin-left: 26%;
+    margin-top: -31%;
+}
+.minde{
+    justify-content: flex-end;
+    text-align: left;
+    margin-left: 28.5%;
+    margin-top: -31%;
+}
+.polo p, .minde p{
+    font-family: 'Open Sans', sans-serif;
+}
+.polo p:first-child, .minde p:first-child{
+    color: rgb(40, 40, 40);
+    font-size: 18px;
+}
+.polo p:last-child, .minde p:last-child{
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+.dev_fb, .dev_gmail{
+    cursor: pointer;
+    display: inline;
+}
+.dev_mark_fb, .dev_mark_gmail{
+    padding: 0px 4px;
+    color: rgb(253, 253, 253);
+    font-family: 'Open Sans', sans-serif;
+}
+.dev_mark_fb{
+    background-color: rgb(46, 77, 167);
+    border: 1px solid rgb(32, 80, 119);
+}
+.dev_mark_gmail{
+    background-color: rgb(208, 54, 44);
+    border: 1px solid rgb(170, 48, 37);
+}
+.devs_contacts hr{
+    /* blogai */
+    transform: translateX(-147%);
 }
 
-
-
-
-
+/* Responsive */
+/* nera responsive forSciene project */
 
 @media screen and (max-width: 380px){
     nav.home_nav a{
@@ -542,7 +708,6 @@ hr.separator{
         color: rgb(5, 5, 5);
     }
 }
-
 @font-face {
     font-family: 'helveticaneueregular';
     src: url('helveticaneue-webfont.eot');

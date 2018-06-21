@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+.body{
+    width: 100%;
+    height: 100%;
+}
+.AB{
+    width: inherit;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+.A, .B, .C, .D, .E, .F, .G, .H, .I{
+    border: 1vh solid white;
+    font-size: 5vh;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.A{
+    width: 80%;
+    background-color: rgb(13, 210, 78);
+}
+.B{
+    width: 20%;
+    background-color: rgb(13, 210, 78);
+}
+.A, .B{
+    height: 100%;
+    position:relative;
+}
+.CDEGFH{
+    width: inherit;
+    height: 1800px;
+    display: flex;
+    background-color: red;
+}
+.C_cont{
+    width: 20%;
+    height: inherit;
+}
+.C{
+    height: 100%;
+    background-color: rgb(234, 210, 78);
+}
+.DEG{
+    width: 60%;
+    height: 100%;
+}
+.D, .E, .G_cont{
+    display: flex;
+    flex-flow: column;
+}
+.D{
+    height: 200px;
+    background-color: rgb(76, 87, 232);
+}
+.E{
+    height: 200px;
+    background-color: rgb(76, 87, 232);
+}
+.G_cont{
+    height: calc(100% - 400px);
+}
+.G{
+    height: 100%;
+    background-color: rgb(76, 87, 232);
+}
+.FH{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.F, .H{
+    display: flex;
+    flex-flow: column;
+}
+.F{
+    height: 400px;
+    background-color: rgb(232, 98, 77);
+}
+.H_cont{
+    height: calc(100% - 400px);
+    background-color: red;
+}
+.H{
+    height:100%;
+    background-color: rgb(232, 98, 77);
+}
+.I{
+    width: inherit;
+    height: 200px;
+    display: flex;
+    background-color: rgb(175, 75, 229);
+}

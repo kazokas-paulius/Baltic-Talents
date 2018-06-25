@@ -37,7 +37,7 @@ nav ul li:last-child{
 }
 main{
     display: flex;
-    height: inherit;
+    height: 600px;
     padding: 10px 0px 0px 0px;
 }
 .content{
@@ -55,28 +55,33 @@ div.texts{
     height: 100%;
 }
 aside.advertising{
+    position: relative;
     float: right;
     height: 100%;
+    width: 100%;
 }
 .advertising-block{
     background-color: rgb(100, 91, 173);
-    width: 200px;
-    height: 25%;
-    padding: 65px 65px 65px 75px;
+    width: 100%;
+    height: 20%;
+}
+div.advertising-block > span{
+    position: absolute;
+    top: 8%;
+    left: 43%;
 }
 .advertising *:not(:last-child){
     margin-bottom: 10px;
 }
 footer{
     margin-top: -10px;
-    height: 100px;
+    margin-right: 10px;
+    height: 20%;
     width: inherit;
     background-color: rgb(82, 149, 168);
 }
 footer p{
     text-align: center;
-    position: relative;
-    top: 35%;
 }
 
 @media (max-width: 768px){

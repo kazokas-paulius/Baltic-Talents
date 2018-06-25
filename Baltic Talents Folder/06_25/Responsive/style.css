@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(38, 34, 36);
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+.text{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2vh;
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    text-align: justify;
+}
+nav{
+    background-color: rgb(109, 19, 52);
+}
+ul{
+    width: 100%;
+    -webkit-padding-start: 0px;
+}
+li:first-child{
+    padding-left: 20px;
+}
+li:last-child{
+    float: right;
+    padding-right: 20px;
+}
+li:nth-child(n+2):not(:first-child){
+    padding-left: 60px;
+}
+li{
+    display: inline;
+    list-style-type: none;
+}
+main{
+    width: 100%;
+    margin-top: -10px;
+}
+article {
+    padding: 10px 60px;
+}
+.article{
+    width: 85%;
+    background-color: rgb(63, 58, 61);
+    margin-right: 10px;
+}
+.advertising{
+    width: 15%;
+    height: inherit;
+}
+.ad{
+    position: relative;
+    display: block;
+    margin:0;
+    width:100%;
+    background-color: rgb(77, 56, 102);
+    height: 25vh;
+}
+.ad > span{
+    position: absolute;
+    top: 43%;
+    left: 43%;
+}
+.ad:nth-child(n+1):not(:last-child){
+    margin-bottom: 10px;
+}
+footer{
+    margin-top: -10px;
+}
+footer span{
+    width: 100%;
+    background-color: rgb(109, 19, 52);
+}
+.foot{
+    color: white;
+    text-align: center;
+}
+@media (max-width: 768px){
+    li:nth-child(1n+2):not(:last-child){
+        visibility: hidden;
+        /* vietoj sito ateity padaryti dropdown lista */
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .advertising{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .advertising:nth-child(1n){
+        padding-top: 10px;
+    }
+    .advertising *{
+        width: 50%;
+    }
+    /* .ad:first-child{ */
+        /* cia tarpas turetu but tipo */
+        /* margin-right: 10px; */
+    /* } */
+    .ad > span{
+        position: absolute;
+        top: 43%;
+        left: 47%;
+    }
+}

@@ -119,4 +119,7 @@ footer span{
         top: 43%;
         left: 47%;
     }
+    footer{
+        margin-top: -20px;
+    }
 }

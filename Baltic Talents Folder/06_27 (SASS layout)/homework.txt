@@ -1,0 +1,10 @@
+1. Sudelioti layoutą naudojant flexą arba floatus. Galite pamaišyti, jei kai kur
+nesigaus išsdumdyti elementų su flex'u, tai dėkit floatus ir clearfixus
+
+2. Reikia :last-child, :first-child stulpelių tarpam sutvarkyti
+
+3. Responsive neprivaloma.
+
+4. Įsirašykit Prepros ir naudokit SASS'ą, išskirstykit stilius į komponentus (atskirus failiukus)
+
+5. Navigaciją ir "footerį" galite užpildyti tekstu, jei taip lengviau :)

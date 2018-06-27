@@ -1,0 +1,26 @@
+// colors
+$black: rgb(0,0,0)
+$color-primary: $black
+$block-color-1: rgb(0, 0, 0)
+$block-primary: $block-color-1
+// widths
+$w-section: 100%
+$w-section-inherit: inherit
+$h-section: 100%
+$h-header: 200px
+// fonts
+$font-size-base: 2vh
+
+html
+    font-size: $font-size-base
+
+
+body
+    width: $w-section
+    height: $h-section
+
+
+header
+    background-color: $block-primary
+    width: $w-section-inherit
+    height: $h-header

@@ -1,7 +1,0 @@
-1. install node.js https://nodejs.org/en/
-2. open cmd type 'npm install node-sass -g' https://prnt.sc/k03q4o
-3. add sass-autocomplete package
-4. create style.scss
-5. add <link> tag to your html '<link rel="stylesheet" href="style.min.css">'
-6. type your code in style.scss, then ctrl+S.
-Finish. Sass generated style.min.css file.

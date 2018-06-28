@@ -1,0 +1,29 @@
+$primary-color: red;
+$primary-f-size: 4vh;
+
+h1{
+    color: $primary-color;
+    font-size: $primary-f-size;
+}
+
+@mixin make-button($padding, $bg-color, $txt-color, $hover-color, $border-radius) {
+  padding: $padding;
+  background-color: $bg-color;
+  color: $txt-color;
+  border-radius: $border-radius;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+.button {
+  &.button-red {
+    @include make-button(10px, red, white, blue, 0);
+  }
+  &.button-blue {
+    @include make-button(10px, blue, white, red, 0);
+  }
+  &.button-green {
+     @include make-button(20px, green, '', '', 0);
+  }
+
+}

@@ -1,0 +1,61 @@
+Installation guide.
+
+1. install node.js https://nodejs.org/en/
+2. open cmd type 'npm install node-sass -g' https://prnt.sc/k03q4o
+3. add sass-autocomplete package
+4. create style.scss
+5. add <link> tag to your html '<link rel="stylesheet" href="style.min.css">'
+6. type your code in style.scss, then ctrl+S.
+Finish. Sass generated style.min.css file.
+
+Tips and tricks.
+
+apsirasymas - $geltona-spalva: yellow;  priskirimas - button { color: $geltona-spalva; }  <- syntax
+
+:hover :nth-child() :after  <- selectors
+
+@import '_button.css' @import '_fonts'  <- partials
+
+@mixin funkcijos-pavadinimas($atributas1, $atributas2) {  <- mixin funkcijos syntax
+  atributas1: $atributas1;
+  atributas2: $atributas2;
+}
+.elementas {  <- elemento klase
+  &.tipas-vienas {  <- elemento subklase
+    @include funkcijos-pavadinimas(atributas1, atributas2)  <- mixin funkcijos parametru priskyrimas elemento subklasej
+  }
+}
+
+@mixin make-button($padding, $bg-color, $txt-color, $hover-color, $border-radius) {  <- mixin exmpl
+  padding: $padding;
+  background-color: $bg-color;
+  color: $txt-color;
+  border-radius: $border-radius;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+.button {
+  &.button-red {
+    @include make-button(10px(padding), red(bg-color), white(txt-color), blue(hover-color), 0(border-radius)); 
+  }
+  &.button-blue {
+    @include make-button(10px, blue, white, red, 0);
+  }
+  
+  &.button-green {
+     @include make-button(20px, green, '', '', 0);
+  }
+
+}
+
+Mixin exmpl overview
+sukuriamas make-button mixino funkcija, kuris tures visus parametrus butono sukurimui
+sukuriama .button buttono klase kuri reprezentuos butono mixino funkcija
+sukuriamos sub-klases ivairiems butono tipams
+mixino funkcijos parametru priskyrimas butono subklasej
+
+Bootstrap scss
+
+https://getbootstrap.com/ > Download > Download Source 
+@import 'bootstrapo_folderio_pav/scss/bootstrap.scss'  <- bootstrapo scss importas i savo style.scss

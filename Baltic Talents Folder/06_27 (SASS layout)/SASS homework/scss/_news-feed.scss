@@ -1,0 +1,143 @@
+.news-feed{
+    display: $u-display-flex;
+    width: auto;
+    height: auto;
+    padding: 0px 10px 10px 20px;
+    margin-right: 0px;
+    // background-color: orange;
+}
+.bottom-div{
+    float: left;
+    width: $u-w-33p;
+    padding: 0px 10px 10px 0px;
+    background-color: inherit;
+}
+.bottom-div figure{
+    width: $u-w-100p;
+    -webkit-margin-start: 10px;
+    -webkit-margin-before: 10px;
+}
+@mixin bottom-div-img($img-width, $img-height, $border-radius){
+    width: $img-width;
+    height: $img-height;
+    border-radius: $border-radius;
+}
+.img{
+    &.bottom-news-regular{
+        @include bottom-div-img(
+            $u-w-i,
+            $u-h-i,
+            2px
+        );
+    }
+}
+@mixin bottom-div-button($font-color, $font-size, $font-family, $font-weight, $border-width, $background-color, $padding, $border-radius, $hover-color, $margin-left) {
+    color: $font-color;
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    border-width: $border-width;
+    background-color: $background-color;
+    padding: $padding;
+    border-radius: $border-radius;
+    &:hover {
+        background-color: $hover-color;
+    }
+    margin-left: $margin-left;
+}
+.button {
+    &.button-bottom-regular {
+        @include bottom-div-button(
+            rgb(28, 28, 28),
+            $u-ff-btn,
+            $u-ff-opensans,
+            700,
+            0px,
+            rgb(163, 163, 163),
+            10px 20px,
+            2px,
+            rgb(130, 130, 130),
+            20px
+        );
+    }
+    &.button-bottom-business {
+        @include bottom-div-button(
+            rgb(28, 28, 28),
+            $u-ff-btn,
+            $u-ff-opensans,
+            700,
+            0px,
+            rgb(56, 91, 175),
+            10px 20px,
+            2px,
+            rgb(82, 116, 196),
+            20px
+        );
+    }
+    &.button-bottom-weather{
+        @include bottom-div-button(
+            rgb(245, 245, 245),
+            $u-ff-btn,
+            $u-ff-opensans,
+            700,
+            0px,
+            rgb(193, 142, 46),
+            10px 20px,
+            2px,
+            rgb(196, 159, 90),
+            0px
+        );
+    }
+    &.button-bottom-contacts{
+        @include bottom-div-button(
+            rgb(245, 245, 245),
+            $u-ff-btn,
+            $u-ff-opensans,
+            700,
+            0px,
+            rgb(126, 45, 193),
+            10px 20px,
+            2px,
+            rgb(162, 119, 198),
+            0px
+        );
+    }
+    &.button-bottom-burgundy {
+        @include bottom-div-button(
+            rgb(245, 245, 245),
+            $u-ff-btn,
+            $u-ff-opensans,
+            700,
+            0px,
+            rgb(167, 36, 52),
+            10px 20px,
+            2px,
+            rgb(76, 19, 52),
+            20px
+        );
+    }
+    &.button-bottom-sport {
+        @include bottom-div-button(
+            rgb(245, 245, 245),
+            $u-ff-btn,
+            $u-ff-opensans,
+            700,
+            0px,
+            rgb(35, 167, 46),
+            10px 20px,
+            2px,
+            rgb(82, 196, 91),
+            20px
+        );
+    }
+}
+.bottom-div h2, .bottom-div p{
+    padding: 0px 20px;
+}
+.bottom-div p{
+    text-align: justify;
+}
+.bottom-div h2 i{
+    font-weight: 100;
+    color: rgb(167, 36, 52);
+}

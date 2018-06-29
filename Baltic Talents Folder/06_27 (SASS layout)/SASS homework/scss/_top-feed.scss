@@ -1,0 +1,152 @@
+.top-feed{
+    display: $u-display-flex;
+    width: auto;
+    height: auto;
+    padding: 30px 10px 10px 10px;
+    margin-top: 10px;
+    background-color: inherit;
+}
+.top-div{
+    float: left;
+    padding: 20px;
+}
+.top-div:first-child{
+    width: $u-w-60p;
+}
+.top-div:nth-child(2n){
+    width: $u-w-20p;
+    background-color: rgb(201, 201, 201);
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.top-div:nth-child(2n) h2, .top-div:last-child h2{
+    margin-top: 10px;
+}
+.top-div:last-child{
+    width: $u-w-20p;
+    background-color: rgb(201, 201, 201);
+    margin-right: 20px;
+}
+.top-div:last-child p:nth-child(4n){
+    font-size: $u-fs-mail;
+    font-weight: 600;
+}
+.div-article h2{
+    font-size: $u-fs-title;
+    -webkit-margin-before: 0.3em;
+}
+.div-article p{
+    text-align: justify;
+}
+@mixin top-div-button($font-color, $font-size, $font-family, $font-weight, $border-width, $background-color, $padding, $border-radius, $hover-color) {
+    color: $font-color;
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    border-width: $border-width;
+    background-color: $background-color;
+    padding: $padding;
+    border-radius: $border-radius;
+    &:hover {
+        background-color: $hover-color;
+    }
+}
+.button {
+    &.button-top-regular {
+        @include top-div-button(
+            rgb(28, 28, 28),
+            $u-ff-btn,
+            $u-ff-opensans,
+            700,
+            0px,
+            rgb(163, 163, 163),
+            10px 15px,
+            2px,
+            rgb(130, 130, 130)
+        );
+    }
+    &.button-top-black {
+        @include top-div-button(
+            rgb(245, 245, 245),
+            $u-ff-btn,
+            $u-ff-opensans,
+            700,
+            0px,
+            rgb(63, 57, 57),
+            10px 15px,
+            2px,
+            rgb(96, 90, 90)
+        );
+    }
+    &.button-top-hottest {
+        @include top-div-button(
+            rgb(245, 245, 245),
+            $u-ff-btn,
+            $u-ff-opensans,
+            700,
+            0px,
+            rgb(211, 209, 55),
+            10px 20px,
+            2px,
+            rgb(198, 197, 81)
+        );
+    }
+}
+.top-div h2 i{
+    font-weight: 100;
+    color: rgb(167, 36, 52);
+}
+@mixin link-text($font-color, $font-family){
+    color: $font-color;
+    font-family: $font-family;
+}
+.link{
+    &.link-regular{
+        @include link-text(
+            rgb(28, 28, 28),
+            $u-ff-encodesanssemiexpande
+        );
+    }
+    &.link-contact-link{
+        @include link-text(
+            rgb(63, 78, 211),
+            $u-ff-encodesanssemiexpande
+        );
+    }
+    &.link-hottest{
+        @include link-text(
+            rgb(226, 226, 192),
+            $u-ff-encodesanssemiexpande
+        );
+    }
+    &.link-business{
+        @include link-text(
+            rgb(206, 212, 229),
+            $u-ff-encodesanssemiexpande
+        );
+    }
+    &.link-weather{
+        @include link-text(
+            rgb(229, 221, 206),
+            $u-ff-encodesanssemiexpande
+        );
+    }
+    &.link-contacts{
+        @include link-text(
+            rgb(206, 195, 216),
+            $u-ff-encodesanssemiexpande
+        );
+    }
+    &.link-burgundy{
+        @include link-text(
+            rgb(216, 197, 199),
+            $u-ff-encodesanssemiexpande
+        );
+    }
+    &.link-sport{
+        @include link-text(
+            rgb(184, 216, 186),
+            $u-ff-encodesanssemiexpande
+        );
+    }
+}

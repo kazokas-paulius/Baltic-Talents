@@ -15,6 +15,8 @@ $u-w-100p: 100%;
 $u-w-75p: 75%;
 $u-w-70p: 70%;
 $u-w-60p: 60%;
+$u-w-50p: 50%;
+$u-w-33p: 33%;
 $u-w-20p: 20%;
 $u-w-10p: 10%;
 // heights
@@ -28,8 +30,12 @@ $u-h-10p: 10%;
 // font families
 $u-ff-raleway: 'Raleway', sans-serif; // <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 $u-ff-opensans: 'Open Sans', sans-serif; // <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+$u-ff-encodesanssemiexpande: 'Encode Sans Semi Expanded', sans-serif;// <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
 // font sizes
 $u-fs-h: 2vh;
+$u-fs-h-1k: 1.8vh;
+$u-fs-h-830: 1.2vh;
 $u-ff-btn: 1.5vh;
 $u-fs-title: 3vh;
 $u-fs-li: 2.4vh;
+$u-fs-mail: 1.5vh;

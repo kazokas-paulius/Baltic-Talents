@@ -1,6 +1,6 @@
 header{
     width: $u-w-i;
-    background-color: rgb(63, 57, 57);
+    background-color: rgb(10, 9, 9);
 }
 nav{
     width: $u-w-i;
@@ -15,8 +15,16 @@ ul{
     -webkit-padding-start: 30px;
     -webkit-padding-end: 10px;
 }
-li:nth-child(1n):not(:last-child){
+// headeryje apsirasomas hover veikia footeryje :d
+li:hover:not(:first-child){
+    color: rgb(193, 67, 58);
+}
+li:first-child{
     font-weight: bold;
+    font-size: $u-fs-title;
+}
+li:nth-child(2n):not(:last-child){
+    font-weight: 300;
 }
 li:nth-child(2){
     padding-left: 60px;

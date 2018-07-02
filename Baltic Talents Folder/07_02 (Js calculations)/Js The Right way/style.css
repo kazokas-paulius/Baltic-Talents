@@ -1,0 +1,50 @@
+body{
+    width: 100%;
+    margin: 0px;
+    background-color: rgb(232, 232, 232);
+    font-family: 'Ubuntu', sans-serif;
+}
+h1, h2{
+    text-align: center;
+}
+h2{
+    -webkit-margin-before: 0.1em;
+    -webkit-margin-after: 0.3em;
+}
+.container{
+    width: 14%;
+    background-color: rgb(180, 180, 180);
+    border: 1px solid rgb(15, 15, 15);
+}
+.main, .secondary{
+    padding: 20px;
+    margin: 3px;
+    background-color: rgb(210, 210, 210);
+    border: 1px solid rgb(15, 15, 15);
+}
+button{
+    width: 90%;
+    padding: 3px 0px;
+    margin: 4px 0px 4px 9px;
+    border: 1px solid rgb(36, 36, 36);
+    background-color: rgb(186, 53, 53);
+    color: rgb(235, 235, 235);
+    font-family: 'Ubuntu', sans-serif;
+}
+button:hover{
+    background-color: rgb(107, 26, 34);
+}
+.main label input{
+    margin-top: 4px;
+    margin-bottom: 3px;
+    width: 40px;
+}
+.secondary label p{
+    display: inline;
+}
+.secondary label p:not(:last-child){
+    margin-right: 10px;
+}
+.main label:last-child input{
+    margin-left: 12px;
+}

@@ -1,0 +1,12 @@
+*{
+    margin: 2px;
+}
+input{
+    width: 100px
+}
+button{
+    width: 104px;
+}
+#formula{
+    color: rgb(226, 65, 65);
+}

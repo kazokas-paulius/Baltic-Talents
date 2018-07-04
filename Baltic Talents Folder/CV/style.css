@@ -17,8 +17,8 @@ body{
     background:
     linear-gradient(
         -90deg,
-        rgba(0, 0, 0, 0.82),
-        rgba(0, 0, 0, 0.82)),
+        rgba(9, 23, 35, 0.82),
+        rgba(9, 23, 35, 0.82)),
         url('img/bg-photo2.png');
         /* url('img/bg-photo.jpg'); */
     background-size: cover;
@@ -44,9 +44,9 @@ body{
 p{
     color: rgb(253, 253, 253);
     font-size: 3vh;
-    font-family: 'Merriweather', serif;
+    font-family: 'Domine', serif;
     border: 3px solid rgba(0, 0, 0, 1.0);
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    background-color: rgba(12, 12, 12, 0.7);
+    background-color: rgba(12, 12, 12, 0.8);
 }

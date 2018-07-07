@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(253, 253, 253) !important;
+}
+/* HEADER START */
+.cover{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(-90deg,
+        rgba(197, 48, 98, 0.8),
+        rgba(197, 48, 98, 0.8)),
+        url('../img/coverbg.png');
+    background-size: cover;
+    background-position: center;
+    color: rgba(253, 253, 253, 0.95);
+    font-family: 'Libre Baskerville', serif;
+}
+.cover-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover-nav{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 2.4em;
+}
+nav{
+    width: inherit;
+    height: 7em;
+}
+ul{
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sintony', sans-serif;
+    -webkit-padding-start: 0 !important;
+}
+ul li:first-child{
+    padding-left: 6em;
+}
+ul li:nth-child(2){
+    padding-left: 32em;
+}
+ul li:not(:first-child){
+    padding-right: 1em;
+}
+li a{
+    color: inherit !important;
+    font-weight: 800;
+}
+.cover-title{
+    width: inherit;
+    height: 28em;
+    flex-direction: column;
+}
+h1{
+    color: inherit;
+    font-size: 3em !important;
+}
+h5{
+    width: 27em;
+    text-align: center;
+}
+.a-selected{
+    position: absolute;
+    -webkit-margin-before: 0 !important;
+    -webkit-margin-after: 0 !important;
+    transform: translateY(-0.3em);
+    width: 3.6em;
+}
+hr{
+    border: 1px solid rgba(253, 253, 253, 1) !important;
+    font-weight: 900;
+    margin: 1em 0.6em 0.3em 0.6em !important;
+    display: inline-block;
+    width: 6.5em;
+}
+h5 span{
+    margin-top: -3em;
+    color: inherit;
+    font-style: italic;
+}
+.cover-footer{
+    width: inherit;
+    height: 5em;
+}
+.cover-foot{
+    width: 3em;
+}
+.cover-foot:hover{
+    cursor: pointer;
+}
+/* HEADER END */

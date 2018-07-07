@@ -7,46 +7,71 @@ body{
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgba(10, 10, 10);
-}
-.content{
-    /* min-height: 100%; */
-    /* height: auto !important; */
-    height: 984px;
-    width: 100%;
-    background:
-    linear-gradient(
-        -90deg,
-        rgba(9, 23, 35, 0.82),
-        rgba(9, 23, 35, 0.82)),
-        url('img/bg-photo2.png');
-        /* url('img/bg-photo.jpg'); */
-    background-size: cover;
-    background-repeat: repeat;
-    border-top: 80px solid rgba(0, 0, 0, 1.0);
-    border-bottom: 80px solid rgba(0, 0, 0, 1.0);
+
+    border-top: 50px solid rgba(0, 0, 0, 1.0);
+    border-bottom: 50px solid rgba(0, 0, 0, 1.0);
     border-left: 10px solid rgba(0, 0, 0, 1.0);
     border-right: 10px solid rgba(0, 0, 0, 1.0);
 
-    border-top-right-radius: 50px 20px;
+    background:linear-gradient(-90deg, rgba(3, 14, 20, 0.83), rgba(3, 14, 20, 0.83)), url('img/bg-photo2.png');
+    background-size: cover;
+    background-repeat: repeat;
+}
+.cl-c-top{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
+}
+.cl-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block-fixed{
+    height: 984px;
+    width: 100%;
 }
 .prof-pic{
-    width: 30%;
+    width: 30em;
     border-radius: 50%;
-    margin: 40px;
+    margin: 8em 0em 4em 0em;
     border: 3px solid rgba(0, 0, 0, 1.0);
     box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.3);
 }
-p{
+.highlight{
     color: rgb(253, 253, 253);
     font-size: 3vh;
     font-family: 'Domine', serif;
     border: 3px solid rgba(0, 0, 0, 1.0);
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    background-color: rgba(12, 12, 12, 0.8);
+    background-color: rgba(7, 6, 6, 0.92);
+}
+
+/* bootstrap modifications */
+
+nav {
+    background-color: rgba(0, 0, 0, 1.0) !important;
+}
+li a{
+    font-family: 'Domine', serif;
+    font-size: 1.2em;
+}
+#li-a{
+    color: rgba(252, 252, 252, 0.92);
+}
+#li-a-left{
+    position: absolute;
+    left: 0.18em;
+}
+/* #li-a-left img{
+    width: 30px;
+    height: 50px;
+    margin-top: -1em;
+} */
+#li-a-right{
+    color: rgba(252, 252, 252, 0.92);
+    position: absolute;
+    right: 0.18em;
 }

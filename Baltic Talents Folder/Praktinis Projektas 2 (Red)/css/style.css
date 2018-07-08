@@ -40,23 +40,23 @@ nav{
     width: inherit;
     height: 7em;
 }
-ul{
+nav ul{
     height: inherit;
     justify-content: center;
     align-items: center;
     font-family: 'Sintony', sans-serif;
     -webkit-padding-start: 0 !important;
 }
-ul li:first-child{
+nav ul li:first-child{
     padding-left: 6em;
 }
-ul li:nth-child(2){
+nav ul li:nth-child(2){
     padding-left: 32em;
 }
-ul li:not(:first-child){
+nav ul li:not(:first-child){
     padding-right: 1em;
 }
-li a{
+nav li a{
     color: inherit !important;
     font-weight: 800;
 }
@@ -104,6 +104,7 @@ h5 span{
 }
 .cover-foot:hover{
     cursor: pointer;
+    filter: brightness(20%);
 }
 /* HEADER END */
 
@@ -206,6 +207,15 @@ h5 span{
     padding: 1em;
     -webkit-margin-after: 4em;
 }
+.instagram-btn:hover, instagram-btn img:hover{
+    cursor: pointer;
+    background-color: rgba(197, 48, 98, 0.4);
+}
+.instagram-btn img{
+    width: 2.3em;
+    opacity: 0.6;
+    display: inline;
+}
 /* PICTURE GALLERY END */
 
 /* CONTACT US START */
@@ -251,15 +261,14 @@ h5 span{
 }
 .contact-us-form-upper{
     width: inherit;
-    height: 460px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    -webkit-margin-after: 1em;
 }
 .contact-us-application-form{
     width: 50%;
-    height: 70%;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items:flex-end;
@@ -267,7 +276,8 @@ h5 span{
 }
 .contact-us-map{
     width: 60%;
-    height: 70%;
+    height: 40vh;
+    position: relative;
     display: flex;
     align-items:flex-start;
     margin-left: 3em;
@@ -283,12 +293,11 @@ h5 span{
     width: inherit;
     border: none;
     border-radius: 4px;
-    font-size: 20px;
     font-family: "Libre Baskerville";
     padding: 0.8em 1.3em;
 }
 textarea{
-    resize: vertical;
+    resize: none !important;
 }
 .contactus-input{
     text-align: left;
@@ -300,15 +309,94 @@ textarea{
     margin-right: 3em;
 }
 .contact-us-map-address{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: flex-start;
+    margin-left: 3em;
+}
+.contact-us-address{
+    width: 60%;
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
 }
 .sendus-btn{
+    height: 50px;
     color: rgb(255,255,255);
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
     background-color: rgb(51, 51, 51);
-    margin-right: 3em;
+}
+.sendus-btn:hover{
+    cursor: pointer;
+    color: rgb(197, 48, 98);
 }
 /* CONTACT US END */
+
+/* FOOTER START */
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 51, 51);
+}
+.footer-header{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    -webkit-margin-before: 3em;
+    -webkit-margin-after: 3em;
+    list-style-type: none;
+    font-family: 'Sintony', sans-serif;
+}
+.footer-header li{
+    margin-right: 1em;
+}
+.footer-header li a{
+    color: rgb(253, 253, 253);
+}
+.footer-header li a:hover{
+    color: rgb(197, 48, 98);
+}
+.footer-social{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    -webkit-margin-after: 3em;
+}
+.circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: rgba(51, 51, 51, 1.0);
+    text-align: center;
+    background-color: rgb(253, 253, 253);
+}
+.circle i{
+    transform: translateY(30%);
+}
+.circle:first-child{
+    margin-left: 1.5em;
+}
+.circle:not(:nth-child(4)){
+    margin-right: 1.5em;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-family: "Sintony";
+    background-color: rgb(45, 45, 45);
+    color: rgb(253, 253, 253);
+}
+.copyright p{
+    margin-left: 2em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+}
+/* FOOTER END */

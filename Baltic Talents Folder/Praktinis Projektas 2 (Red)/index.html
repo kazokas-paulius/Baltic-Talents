@@ -9,27 +9,28 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Project #2</title>
     </head>
-    <body>
-        <div class="cover">
+    <body id="main">
+        <div id="cover" class="cover">
             <div class="cover-nav">
                 <nav>
-                    <ul class="nav nav-items-pos">
-                        <li class="nav-item">
+                    <ul id="navul">
+                        <li id="ni">
                             <img class="logo" src="img/logo.png" alt="brand logo">
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">HOME</a><hr class="a-selected">
+                        <li id="ni">
+                            <a class="nav-link" href="#cover">HOME</a><!--<hr class="a-selected">-->
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                        <li id="ni">
+                            <a class="nav-link" href="#aboutus">ABOUT US</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SOCIAL</a>
+                        <li id="ni">
+                            <a class="nav-link" href="#social">SOCIAL</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                        <li id="ni">
+                            <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                 </nav>
@@ -39,10 +40,10 @@
                 <h5><hr><span>SINCE 1978</span><hr></h5>
             </div>
             <div class="cover-container cover-footer">
-                <a href="#footer"><img class="cover-foot" src="img/arrow-down.png" alt="toContacts"></a>
+                <a id="to-contacts" href="#footer"><img class="cover-foot" src="img/arrow-down.png" alt="toContacts"></a>
             </div>
         </div>
-        <div class="team">
+        <div id="aboutus" class="team">
             <div class="team-title">
                 <h2>Meet Our Team</h2>
                 <div class="team-title-line"></div>
@@ -77,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="picture-gallery">
+        <div id="social" class="picture-gallery">
             <div class="picture-carousel">
                 <section class="carousel slide" data-ride="carousel" id="postsCarousel">
                     <div class="container pt-0 mt-2">
@@ -170,7 +171,7 @@
                 <img src="img/instagram-logo.png" alt="instagram logo">
                 FOLLOW US ON INSTAGRAM</button>
         </div>
-        <div class="contact-us">
+        <div id="contact" class="contact-us">
             <div class="contact-us-title">
                 <h2>Contact Us</h2>
                 <div class="contact-us-title-line"></div>
@@ -178,40 +179,38 @@
             <div class="contact-us-form">
                 <div class="contact-us-form-upper">
                     <div class="contact-us-application-form">
-                        <input class="contactus-input" type="text" name="nameLastname" value="" placeholder="Full Name">
+                        <input class="contactus-input" type="text" name="nameLastname" placeholder="Full Name">
                         <input class="contactus-input" type="text" name="email" value="contact@email.com">
-                        <textarea class="contactus-input" name="name" rows="12" cols="80" placeholder="Message"></textarea>
+                        <textarea class="contactus-input" name="name" rows="100" cols="80" placeholder="Message"></textarea>
                     </div>
-                    <div id="contact-us-map" class="contact-us-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9746002586544!2d-73.98365608412726!3d40.76258337932641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f865ca626f%3A0x1ecd551733accc42!2s811+7th+Ave%2C+New+York%2C+NY+10019%2C+Jungtin%C4%97s+Valstijos!5e0!3m2!1slt!2slt!4v1531054795111" style="border:none;"></iframe>
-                    </div>
+                    <div id="contact-us-map" class="contact-us-map"></div>
                 </div>
                 <div class="contact-us-form-lower">
                     <div class="contact-us-application-form-btn">
                         <button class="sendus-btn" type="button" name="button">SEND</button>
                     </div>
-                    <div class="contact-us-map-address">
+                    <div id="csma" class="contact-us-map-address">
                         <h4 class="contact-us-address">811 7th Avenue 53rd Street New York, 10019, United States</h4>
                     </div>
                 </div>
             </div>
         </div>
         <div id="footer" class="footer">
-            <ul class="footer-header">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
+            <ul id="footul" class="footer-header">
+                <li>
+                    <a href="#cover">HOME</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
+                <li>
+                    <a href="#aboutus">ABOUT US</a>
                 </li>
-                <li class="nav-item">
+                <li>
                     <img class="logo" src="img/footer-logo.png" alt="brand logo">
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">SOCIAL</a>
+                <li>
+                    <a href="#social">SOCIAL</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
+                <li>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
             <div class="footer-social">
@@ -228,5 +227,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDucuJPxsGhz1UwLFy6ypr5LA7Br5V60Iw&callback=initMap"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 300, function(){
+                    window.location.hash = hash;
+                  });
+                }
+              });
+            });
+        </script>
     </body>
 </html>

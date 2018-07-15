@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+@mixin grid_row($height, $width, $margin, $display){
+    height: $height;
+    width: $width;
+    margin: $margin;
+    display: $display;
+}
+.row-s-100{
+    @include grid_row(
+        100px !important,
+        100%,
+        0px,
+        flex
+    );
+}
+.row-s-200{
+    @include grid_row(
+        200px !important,
+        100%,
+        0px,
+        flex
+    );
+}
+.row-s-300{
+    @include grid_row(
+        300px !important,
+        100%,
+        0px,
+        flex
+    );
+}
+.row-s-400{
+    @include grid_row(
+        400px !important,
+        100%,
+        0px,
+        flex
+    );
+}
+@mixin grid_col($height, $width, $display, $border){
+    height: $height;
+    width: $width;
+    display: $display;
+    border: $border;
+}
+.col-12{
+    @include grid_col(
+        100%,
+        50%,
+        inline-block,
+        1px solid black
+    );
+}
+.col-13{
+    @include grid_col(
+        100%,
+        33.33%,
+        inline-block,
+        1px solid black
+    );
+}
+.col-18{
+    @include grid_col(
+        100%,
+        20%,
+        inline-block,
+        1px solid black
+    );
+}
+.col-110{
+    @include grid_col(
+        100%,
+        10%,
+        inline-block,
+        1px solid black
+    );
+}

@@ -1,0 +1,114 @@
+:root{
+    --darkgrey: rgb(134, 134, 134);
+    --grey: rgb(221, 221, 221);
+    --lightgrey: rgb(245, 245, 245);
+    --lightergrey: rgb(248, 248, 248);
+    --lightestgrey: rgb(250, 250, 250);
+    --pink: rgb(255, 100, 194);
+    --darkpink: rgb(240, 72, 174);
+}
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: var(--lightestgrey);
+    margin: 0rem;
+}
+.wrapper{
+    display: grid;
+    grid-gap: 0px;
+}
+.nav{
+    display: grid;
+    grid-template-areas: 'nav-brand nav-meniu' 'colapsed colapsed';
+    background: var(--lightgrey);
+}
+.nav-brand{
+    display: grid;
+    grid-area: nav-brand;
+    grid-template-columns: 1fr;
+    margin: auto 0;
+    text-align: right;
+    padding-left: 15em;
+}
+.nav-meniu{
+    display: grid;
+    grid-area: nav-meniu;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+.nav-brand a, .nav-meniu a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--darkgrey);
+}
+.nav-brand a{
+    font-size: 36px;
+}
+.nav-brand a i{
+    color: var(--pink);
+}
+.nav-meniu a{
+    font-size: 14px;
+}
+.nav-meniu ul{
+    display: grid;
+    list-style: none;
+    text-align: center;
+    grid-template-columns: repeat(6, 1fr);
+    -webkit-padding-start: 10em;
+}
+.nav-meniu ul li{
+    margin: auto 0;
+}
+.nav-meniu ul li:not(:last-child){
+    text-align: center;
+}
+.content{
+    display: none;
+    grid-area: colapsed;
+    padding-left: 20em;
+    background: var(--darkgrey);
+}
+.content p a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--dark);
+}
+.content p a:hover{
+    color: var(--pink);
+}
+.content p:not(:last-child){
+    padding-left: 1em;
+}
+.nav-meniu ul li:nth-child(5) button, .content p:last-child button{
+    border: 15px solid var(--pink);
+    border-radius: 26px;
+    background-color: var(--pink);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-brand a:hover, .nav-meniu ul li a:hover{
+    cursor: pointer;
+    color: var(--dark);
+}
+.nav-meniu ul li:nth-child(5) button:hover, .content p:last-child button:hover{
+    cursor: pointer;
+    border: 15px solid var(--darkpink);
+    background-color: var(--darkpink);
+    color: var(--dark);
+}
+.nav-meniu ul li:last-child button{
+    border: none;
+    background: none;
+}
+.nav-meniu ul li:last-child img{
+    transform: translateY(14%);
+}
+.nav-meniu ul li:last-child img:hover{
+    cursor: pointer;
+    filter: brightness(0.2);
+}

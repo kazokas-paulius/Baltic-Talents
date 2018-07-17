@@ -4,12 +4,14 @@
     --lightgrey: rgb(245, 245, 245);
     --lightergrey: rgb(248, 248, 248);
     --lightestgrey: rgb(250, 250, 250);
+    --white: rgb(255, 255, 255);
     --pink: rgb(255, 100, 194);
     --darkpink: rgb(240, 72, 174);
 }
 html{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Open Sans";
 }
 body{
     background: var(--lightestgrey);
@@ -19,6 +21,7 @@ body{
     display: grid;
     grid-gap: 0px;
 }
+/*navbar*/
 .nav{
     display: grid;
     grid-template-areas: 'nav-brand nav-meniu' 'colapsed colapsed';
@@ -99,7 +102,9 @@ body{
     cursor: pointer;
     border: 15px solid var(--darkpink);
     background-color: var(--darkpink);
-    color: var(--dark);
+}
+.nav-meniu ul li:nth-child(5) button:focus, .nav-meniu ul li:last-child button:focus{
+    outline: none;
 }
 .nav-meniu ul li:last-child button{
     border: none;
@@ -111,4 +116,315 @@ body{
 .nav-meniu ul li:last-child img:hover{
     cursor: pointer;
     filter: brightness(0.2);
+}
+/*cover*/
+.cover{
+    display: grid;
+    text-align: center;
+    background: var(--lightgrey);
+    background-image: linear-gradient(-90deg,
+        rgba(32, 30, 30, 0.7),
+        rgba(32, 30, 30, 0.7)),
+        url("img/cover_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-template-rows: 250px 300px 300px;
+    grid-template-areas: 'cover-title' 'cover-search' 'cover-social';
+}
+.cover-title, .cover-search, .cover-social{
+    width: inherit;
+    margin: auto 0;
+}
+.cover-title{
+    grid-area: cover-title;
+    font-size: 48px;
+    line-height: 75px;
+    color: var(--lightestgrey);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.cover-search{
+    grid-area: cover-search;
+}
+.cover-search input{
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-style: none;
+    background: var(--lightgrey);
+    width: 500px;
+    height: 40px;
+    padding: 1em 1.5em;
+    font-size: 14px;
+}
+.cover-search input::placeholder{
+    color: rgb(181, 181, 181);
+}
+.cover-search button{
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-style: none;
+    background: var(--pink);
+    color: var(--lightestgrey);
+    height: 66.9px;
+    padding: 1em 2em 1em 0.5em;
+}
+.cover-search button:hover{
+    cursor: pointer;
+    background: var(--darkpink);
+}
+.cover-search button:focus{
+    border-style: none;
+    outline: none;
+}
+.cover-search button i{
+    padding-left: 15px;
+    padding-right: 5px;
+    margin: auto 0;
+}
+.cover-social{
+    grid-area: cover-social;
+}
+.circle{
+    margin: auto 0;
+    display: inline;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--pink);
+    text-align: center;
+    background-color: inherit;
+    overflow: hidden;
+    /* cia sukgrizti uzdeti apvalumus */
+}
+.circle a{
+    font-size: 48px;
+    color: var(--pink);
+    padding: 1em;
+}
+.circle a:hover{
+    cursor: pointer;
+    color: var(--darkpink);
+}
+/*cons*/
+.cons{
+    display: grid;
+    text-align: center;
+    grid-template-rows: 350px 500px;
+    background: var(--lightgrey);
+    padding: 0em 10em;
+}
+.cons-upper{
+    font-size: 48px;
+    line-height: 75px;
+    color: var(--darkgrey);
+    font-weight: bold;
+    margin: auto 0;
+}
+.cons-upper p{
+    font-size: 14px;
+    line-height: 30px;
+}
+.cons-lower{
+    display: grid;
+    grid-template-areas: 'cons-speed cons-security cons-support cons-quality'
+}
+.cons-speed, .cons-security, .cons-support, .cons-quality{
+    margin: 0 auto;
+    color: var(--lightgrey);
+}
+.cons-speed i, .cons-security i, .cons-support i, .cons-quality i{
+    font-size: 80px;
+}
+.cons-speed h3, .cons-security h3, .cons-support h3, .cons-quality h3{
+    font-size: 40px;
+}
+.cons-speed i, .cons-security i, .cons-support i, .cons-quality i, .cons-speed h3, .cons-security h3, .cons-support h3, .cons-quality h3{
+    color: var(--darkpink);
+}
+.cons-speed p, .cons-security p, .cons-support p, .cons-quality p{
+    line-height: 30px;
+    padding: 0em 1em 10em 1em;
+    text-align: justify;
+    color: var(--darkgrey);
+}
+.cons-speed{
+    grid-area: cons-speed;
+    padding: 1em .5em 1em 0em;
+}
+.cons-security{
+    grid-area: cons-security;
+    padding: 1em .5em 1em .5em;
+}
+.cons-support{
+    grid-area: cons-support;
+    padding: 1em .5em 1em .5em;
+}
+.cons-quality{
+    grid-area: cons-quality;
+    padding: 1em 0em 1em .5em;
+}
+/* services */
+.services{
+    display: grid;
+    grid-template-rows: 200px 250px 200px;
+    grid-template-columns: 200px 585px 585px 200px;
+    grid-template-areas:'emptyDiv emptyDiv emptyDiv emptyDiv' 'aNfp aNfp Hundredmbg Hundredmbg' 'emptyDiv2 emptyDiv2 emptyDiv2 emptyDiv2';
+    background: var(--pink);
+    padding: 0em 10em;
+}
+.aNfp, .Hundredmbg{
+    /* margin: auto 0; */
+}
+.emptyDiv{
+    grid-area: emptyDiv;
+}
+.emptyDiv2{
+    grid-area: emptyDiv2;
+}
+.aNfp, .Hundredmbg{
+    position: relative;
+    background: var(--lightgrey);
+    margin: auto 0;
+    color: var(--darkgrey);
+}
+.aNfp img, .Hundredmbg img{
+    position: absolute;
+    top: 2.5em;
+    left: 1.8em;
+}
+.aNfp h3, .Hundredmbg h3{
+    padding: 1em 2em 1em 6em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: -1em;
+}
+.aNfp p, .Hundredmbg p{
+    text-align: justify;
+    padding: 1em 2em 1em 8em;
+    line-height: 30px;
+    font-size: 14px;
+}
+.aNfp{
+    grid-area: aNfp;
+    margin-right: 1em;
+}
+.Hundredmbg{
+    grid-area: Hundredmbg;
+    margin-left: 1em;
+}
+/*ad*/
+.ad{
+    display: grid;
+    grid-template-rows: 200px 350px 350px 200px;
+    grid-template-columns: 200px 585px 585px 200px;
+    grid-template-areas: 'emptyDiv emptyDiv emptyDiv emptyDiv' 'ad-info ad-info ad-boy ad-boy' 'ad-info-list ad-info-list ad-boy ad-boy' 'emptyDiv2 emptyDiv2 emptyDiv2 emptyDiv2';
+    background: var(--white);
+    padding: 0em 10em;
+}
+.ad-info{
+    grid-area: ad-info;
+    padding: 1em 12em 1em 2em;
+}
+.ad-info h2{
+    font-size: 48px;
+    line-height: 75px;
+    color: var(--darkgrey);
+    font-weight: bold;
+}
+.ad-info p{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 300;
+    color: var(--darkgrey);
+    padding-right: 10em;
+}
+.ad-info-list{
+    grid-area: ad-info-list;
+}
+.ad-info-list ul{
+    list-style: none;
+}
+.ad-info-list ul li{
+    position:relative;
+}
+.ad-info-list ul li:not(:nth-child(4)){
+    margin-bottom: 1em;
+}
+.ad-info-list ul li p{
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--darkgrey);
+    position: absolute;
+    transform: translate(11px, -11px);
+}
+.ad-boy{
+    grid-area: ad-boy;
+}
+.ad-boy img{
+    width: 100%;
+}
+/*clients*/
+.client{
+    display: grid;
+    grid-template-rows: 350px 200px 250px;
+    grid-template-columns: 200px 500px 500px 500px 200px;
+    grid-template-areas: 'clients-title clients-title clients-title clients-title clients-title' 'emptyDiv client1 client2 client3 emptyDiv2' 'emptyDiv clients-personal1 clients-response2 clients-response3 emptyDiv2';
+}
+.clients-title{
+    grid-area: clients-title;
+    font-size: 48px;
+    line-height: 75px;
+    color: var(--darkgrey);
+    font-weight: bold;
+    text-align: center;
+    margin: auto 0;
+}
+.client1{
+    grid-area: client1;
+}
+.client2{
+    grid-area: client2;
+}
+.client3{
+    grid-area: client3;
+}
+.client1, .client2, .client3{
+    margin: auto 0;
+    position: relative;
+    text-align: justify;
+    padding: 1em;
+    background-image: url("img/client_bg.png");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    /* pacheatinti su situo */
+    /* border-bottom: 2px solid rgba(217,217,217,0.5); */
+}
+.clients-response1, .clients-response2, .clients-response3{
+    padding: 2em 1em 0em 1em;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--darkgrey);
+    line-height: 30px;
+}
+.clients-personal1, .clients-personal2, .clients-personal3{
+    text-align: center;
+    vertical-align: text-top;
+}
+.clients-personal1 h4, .clients-personal2 h4, .clients-personal3 h4{
+    font-size: 18px;
+    color: var(--darkgrey);
+    -webkit-margin-after: 0em;
+}
+.clients-personal1 p, .clients-personal2 p, .clients-personal3 p{
+    color: var(--darkgrey);
+}
+.clients-img{
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15%;
+    left: 40%;
 }

@@ -7,6 +7,7 @@
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-COmpactible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <title>Soran</title>
     </head>
@@ -167,7 +168,76 @@
                 <div class="emptyDiv2"></div>
                 </div>
                 <div class="team">
-
+                    <h3 class="team-title">Our Team</h3>
+                    <div class="team-carousel">
+                        <section class="carousel slide" data-ride="carousel" id="postsCarousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-deck">
+                                        <a class="btn btn-secondary-outline prev" title="go back">
+                                            <img class="oval" src="img/team-carousel-oval.png"><i class="fa fa-lg fa-chevron-left"></i>
+                                        </a>
+                                        <div class="card h-100">
+                                            <div class="card-img-top card-img-top-250">
+                                                <img class="img-fluid" src="img/client_3.png">
+                                                <h4>Angelina Doe</h4>
+                                                <p>Marketing Manager, Graphicslab</p>
+                                            </div>
+                                        </div>
+                                        <div class="card h-100">
+                                            <div class="card-img-top card-img-top-250">
+                                                <img class="img-fluid" src="img/client_4.png">
+                                                <h4>Kyle Byles</h4>
+                                                <p>UI UX Designer</p>
+                                            </div>
+                                        </div>
+                                        <div class="card h-100">
+                                            <div class="card-img-top card-img-top-250">
+                                                <img class="img-fluid" src="img/client_1.png">
+                                                <h4>John Doe</h4>
+                                                <p>Creative Director, DigitalBlow</p>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-secondary-outline next" title="more">
+                                            <img class="oval" src="img/team-carousel-oval.png"><i class="fa fa-lg fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-deck">
+                                        <a class="btn btn-secondary-outline prev" title="go back">
+                                            <img class="oval" src="img/team-carousel-oval.png"><i class="fa fa-lg fa-chevron-left"></i>
+                                        </a>
+                                        <div class="card h-100">
+                                            <div class="card-img-top card-img-top-250">
+                                                <img class="img-fluid" src="img/client_6.jpg">
+                                                <h4>Juan Fernandez Borio</h4>
+                                                <p>CEO, Artq</p>
+                                            </div>
+                                        </div>
+                                        <div class="card h-100">
+                                            <div class="card-img-top card-img-top-250">
+                                                <img class="img-fluid" src="img/client_5.jpg">
+                                                <h4>Joseph Green</h4>
+                                                <p>Senior Java Developer, Artq</p>
+                                            </div>
+                                        </div>
+                                        <div class="card h-100">
+                                            <div class="card-img-top card-img-top-250">
+                                                <img class="img-fluid" src="img/client_2.png">
+                                                <h4>Mike Bhand</h4>
+                                                <p>CEO, Graphicslab</p>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-secondary-outline next" title="more">
+                                            <img class="oval" src="img/team-carousel-oval.png"><i class="fa fa-lg fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <img class="bg-curvature" src="img/team-bg-thing.png" alt="">
+                    </div>
                 </div>
                 <div class="blog">
 
@@ -180,6 +250,19 @@
                 </div>
             </div>
         </div>
-        <script src="main.js"></script>
+        <script>
+            $('.collapsible').click(function(){
+                $('.content').slideToggle('fast');
+            });
+            (function($) {
+                "use strict";
+                $('.next').click(function(){ $('.carousel').carousel('next');return false; });
+                $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+
+            })(jQuery);
+        </script>
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
